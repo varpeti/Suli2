@@ -1,0 +1,401 @@
+
+SQLcl: Release 17.4.0 Production on Cs szept. 13 19:04:24 2018
+
+Copyright (c) 1982, 2018, Oracle.  All rights reserved.
+
+Password? (**********?) *************
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+
+
+TABLE_NAME                                                                      
+--------------------------------------------------------------------------------
+AUDIO                                                                           
+GROUPS                                                                          
+HISTORYITEMS                                                                    
+MEMBERS                                                                         
+PLAYITEMS                                                                       
+SHARES                                                                          
+USERS                                                                           
+ANNOTATION_BBC                                                                  
+HISTORYITEMS_LARGE                                                              
+HISTORYITEMS_LARGE_CF                                                           
+AUDIO_LARGE                                                                     
+
+11 rows selected. 
+
+
+Error starting at line : 6 in command -
+AUDIO
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+REMOVED_AT_ZONE                                                                 
+EXPIRES_AT_ZONE                                                                 
+ID                                                                              
+TITLE                                                                           
+AUTHOR                                                                          
+DESCRIPTION                                                                     
+USER_ID                                                                         
+SRC_MD5                                                                         
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+EXPIRES_AT                                                                      
+DURATION                                                                        
+ID                                                                              
+TITLE                                                                           
+AUTHOR                                                                          
+DESCRIPTION                                                                     
+USER_ID                                                                         
+SRC_MD5                                                                         
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+EXPIRES_AT                                                                      
+DURATION                                                                        
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+REMOVED_AT_ZONE                                                                 
+EXPIRES_AT_ZONE                                                                 
+
+30 rows selected. 
+
+
+Error starting at line : 11 in command -
+GROUPS
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+NAME                                                                            
+DESCRIPTION                                                                     
+UPLOAD_PERMISSION                                                               
+LIST_VISIBLE                                                                    
+USERS_VISIBLE                                                                   
+AUTO_ACCEPT                                                                     
+USER_ID                                                                         
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+PUBLISHED_AT                                                                    
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+PUBLISHED_AT_ZONE                                                               
+REMOVED_AT_ZONE                                                                 
+ID                                                                              
+NAME                                                                            
+DESCRIPTION                                                                     
+UPLOAD_PERMISSION                                                               
+LIST_VISIBLE                                                                    
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+USERS_VISIBLE                                                                   
+AUTO_ACCEPT                                                                     
+USER_ID                                                                         
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+PUBLISHED_AT                                                                    
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+PUBLISHED_AT_ZONE                                                               
+REMOVED_AT_ZONE                                                                 
+
+32 rows selected. 
+
+
+Error starting at line : 16 in command -
+HISTORYITEMS
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+USER_ID                                                                         
+AUDIO_ID                                                                        
+STARTED_AT                                                                      
+STARTED_AT_ZONE                                                                 
+DURATION                                                                        
+RATING                                                                          
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+FLAGS                                                                           
+ID                                                                              
+USER_ID                                                                         
+AUDIO_ID                                                                        
+STARTED_AT                                                                      
+STARTED_AT_ZONE                                                                 
+DURATION                                                                        
+RATING                                                                          
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+FLAGS                                                                           
+
+24 rows selected. 
+
+
+Error starting at line : 21 in command -
+MEMBERS
+Error report -
+Unknown Command
+
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+USER_ID                                                                         
+GROUP_ID                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+PERMISSION                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+COLOR                                                                           
+ID                                                                              
+USER_ID                                                                         
+GROUP_ID                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+PERMISSION                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+COLOR                                                                           
+
+18 rows selected. 
+
+
+Error starting at line : 26 in command -
+PLAYITEMS
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+USER_ID                                                                         
+AUDIO_ID                                                                        
+position                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+SOURCE                                                                          
+ID                                                                              
+USER_ID                                                                         
+AUDIO_ID                                                                        
+position                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+SOURCE                                                                          
+
+18 rows selected. 
+
+
+Error starting at line : 31 in command -
+SHARES
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+AUDIO_ID                                                                        
+GROUP_ID                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+PERMISSION                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+ID                                                                              
+AUDIO_ID                                                                        
+GROUP_ID                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+PERMISSION                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+
+16 rows selected. 
+
+
+Error starting at line : 36 in command -
+USERS
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+EMAIL                                                                           
+PASSWORD                                                                        
+PERMISSION                                                                      
+GUEST_ID                                                                        
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+LAST_LOGIN_IP                                                                   
+LAST_LOGIN_AT                                                                   
+FORENAME                                                                        
+SURNAME                                                                         
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+LAST_LOGIN_AT_ZONE                                                              
+REMOVED_AT_ZONE                                                                 
+ID                                                                              
+EMAIL                                                                           
+PASSWORD                                                                        
+PERMISSION                                                                      
+GUEST_ID                                                                        
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+LAST_LOGIN_IP                                                                   
+LAST_LOGIN_AT                                                                   
+FORENAME                                                                        
+SURNAME                                                                         
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+LAST_LOGIN_AT_ZONE                                                              
+REMOVED_AT_ZONE                                                                 
+
+32 rows selected. 
+
+
+Error starting at line : 41 in command -
+ALLS
+Error report -
+Unknown Command
+
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+no rows selected
+
+Error starting at line : 46 in command -
+ANNOTATION_BBC
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+FILENAME                                                                        
+USERNAME                                                                        
+FILETIMESTAMP                                                                   
+INTERVALFROM                                                                    
+INTERVALTO                                                                      
+INTERVALLABEL                                                                   
+
+6 rows selected. 
+
+
+Error starting at line : 51 in command -
+HISTORYITEMS_LARGE
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+USER_ID                                                                         
+AUDIO_ID                                                                        
+STARTED_AT                                                                      
+STARTED_AT_ZONE                                                                 
+DURATION                                                                        
+RATING                                                                          
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+FLAGS                                                                           
+
+12 rows selected. 
+
+
+Error starting at line : 56 in command -
+HISTORYITEMS_LARGE_CF
+Error report -
+Unknown Command
+
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+USER_ID                                                                         
+AUDIO_ID                                                                        
+STARTED_AT                                                                      
+STARTED_AT_ZONE                                                                 
+DURATION                                                                        
+RATING                                                                          
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+FLAGS                                                                           
+
+12 rows selected. 
+
+
+Error starting at line : 61 in command -
+AUDIO_LARGE
+Error report -
+Unknown Command
+
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+ID                                                                              
+TITLE                                                                           
+AUTHOR                                                                          
+DESCRIPTION                                                                     
+USER_ID                                                                         
+SRC_MD5                                                                         
+CREATED_AT                                                                      
+UPDATED_AT                                                                      
+EXPIRES_AT                                                                      
+DURATION                                                                        
+REMOVED_AT                                                                      
+CREATED_AT_ZONE                                                                 
+UPDATED_AT_ZONE                                                                 
+REMOVED_AT_ZONE                                                                 
+EXPIRES_AT_ZONE                                                                 
+
+15 rows selected. 
+
+SQL> 
+Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production

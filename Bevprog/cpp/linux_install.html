@@ -1,0 +1,22 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<body>
+Szükséges csomagok telepítése
+<tt>
+<br>sudo apt-get install libsdl-dev
+<br>sudo apt-get install libsdl-ttf2.0-dev 
+</tt>
+<p>
+graphics lib fordítása
+<tt>
+<br>g++ -c graphics.cpp -O3 -lSDL -lSDL_ttf
+<br>ar rcs libgraphics.a graphics.o 
+</tt>
+
+<p>
+Grafikus program fordítása:
+<tt>
+<br>g++ main.cpp -lgraphics -lSDL -lSDL_ttf -L.
+</tt>
+</body>
+</html>

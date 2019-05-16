@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AuI</string>
+    <string-array name="btnNames">
+        <item>Nyomj meg!</item>
+        <item>Ne őt, engem!</item>
+        <item>Nem tutdsz megnyomni!</item>
+        <item>Be be beeee</item>
+        <item>Nyomj meg plíz!</item>
+        <item>Ingyen cukorka</item>
+        <item>&lt;3</item>
+        <item>Kisebb mint három</item>
+        <item>&lt;!--Ninja--&gt;</item>
+        <item>Miáu</item>
+        <item>Miáu x2</item>
+        <item>Miáu^2</item>
+        <item>Miáu^^2</item>
+        <item>A ^^ az Tetration</item>
+        <item>ez egy nagy művelet</item>
+        <item>csak nagyfiúknak</item>
+        <item>szóval nyomj meg!</item>
+    </string-array>
+
+    <string-array name="btnClick">
+        <item>Köszi tesa!</item>
+        <item>Juhéééé!</item>
+        <item>Be be beeee</item>
+        <item>Nem tutdsz megnyomni!</item>
+        <item>Méééég!</item>
+        <item>Haha nincs cukorka!</item>
+        <item>Kisebb mint három</item>
+        <item>&lt;3</item>
+        <item><!--Ninja--> </item>
+        <item>Doromb</item>
+        <item>Doromb x2</item>
+        <item>Doromb^2</item>
+        <item>Doromb^^2</item>
+        <item>Igen, Tetration.</item>
+        <item>ez egy tényleg nagy művelet</item>
+        <item>pont mint te</item>
+        <item>Tessék cukorka:</item>
+    </string-array>
+</resources>

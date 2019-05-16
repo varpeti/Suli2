@@ -1,0 +1,31 @@
+Nincs .classpath file.
+Nincs .project file.
+Orrolni szoktak erte, ha default package-be teszed az osztalyodat.
+
+Nincs `sulyokatListaz()` metodus, a `Main` osztalyban van egy kiirato fuggveny.
+
+Nehany esetben nem mukodik jol az algoritmus (nem kezeled le, hogy az eredmeny
+sorrendjet vissza kene valtoztani a bemenet eredeti sorrendjere), pl.:
+
+    Test: weight: 14 weights: 1, 5, 2, 10, 
+    --> Error: result length 5 != weights length 4
+    --> Error: result doesn't add up: expected: 14 got: 20
+    == FAILED
+    Test: weight: 14 weights: 20, 2, 5, 10, 
+    --> Error: result length 5 != weights length 4
+    --> Error: result doesn't add up: expected: 14 got: 45
+    == FAILED
+    Test: weight: 18 weights: 10, 4, 5, 1, 
+    --> Error: result length 5 != weights length 4
+    --> Error: result doesn't add up: expected: 18 got: 9
+    == FAILED
+    Test: weight: 98 weights: 10, 4, 1, 40, 5, 50, 
+    --> Error: result length 7 != weights length 6
+    --> Error: result doesn't add up: expected: 98 got: 63
+    == FAILED
+    Test: weight: 1818 weights: 10, 4, 1, 400, 5, 500, 100, 1000, 
+    --> Error: result length 9 != weights length 8
+    --> Error: result doesn't add up: expected: 1818 got: 2408
+    == FAILED
+
+Egyebkent szep.

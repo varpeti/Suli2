@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="connection.url">jdbc:oracle:thin:@//dboracle.itk.ppke.hu:1521/lab.itk.ppke.hu</property>
+		<property name="connection.username">AD18_VARPET</property>
+		<property name="connection.password">idejonajelszo</property>
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">1</property>
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="categories.auto">create</property>
+		<!-- Magic -->
+		<property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
+		<mapping class="hibernate.Categories"></mapping>
+	</session-factory>
+
+</hibernate-configuration>

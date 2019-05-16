@@ -1,0 +1,188 @@
+open class Card
+{
+    // A legtöbb kártyában van többértékűség (Ace, TheFool, Joker stb)
+    val value : Pair<Int, Int>
+    // A legtöbb kártyában van rank és suit
+    val rank : String
+    val suit : String
+
+    constructor(suit: String, rank: String, value: Pair<Int, Int>)
+    {
+        this.value = value
+        this.rank = rank
+        this.suit = suit
+    }
+
+    constructor(rank: String, value: Pair<Int, Int>) //Second constructor, in case of no Suit
+    {
+        this.value = value
+        this.rank = rank
+        this.suit = ""
+    }
+
+    // Kiíráshoz
+    fun p() : String
+    {
+        return "[${suit}${rank}]"
+    }
+
+    override operator fun equals(other: Any?) =
+        when (other) 
+        {
+            is Card -> this.value == other.value
+            else -> throw Exception("")
+        }
+
+    operator fun compareTo(other: Card) = 
+        this.value.first - other.value.first
+    
+}
+
+enum class Rank(val value: Pair<Int,Int>,val str : String) 
+{
+    // BlackJack értékek
+    Ace(Pair(1,11)," A"),
+    Two(Pair(2,2)," 2"), Three(Pair(3,3)," 3"), Four(Pair(4,4)," 4"), Five(Pair(5,5)," 5"), Six(Pair(6,6)," 6"), Seven(Pair(7,7)," 7"), Eight(Pair(8,8)," 8"), Nine(Pair(9,9)," 9"), Ten(Pair(10,10),"10"),
+    Jack(Pair(10,10)," J"), Queen(Pair(10,10)," Q"), King(Pair(10,10)," K")
+}
+
+enum class Suit(val str : String)
+{
+    //I \u2665 Unicode
+    Spade("\u2660"),
+    Heart("\u2665"),
+    Diamond("\u2666"),
+    Club("\u2663")
+}
+
+class PlayingCard : Card
+{
+    constructor(suit: Suit, rank: Rank) : super(suit.str,rank.str,rank.value)
+    {
+    }
+}
+
+class DeckOfPlayingCards
+{
+    var deck = Array<PlayingCard>(52, {PlayingCard(Suit.Spade,Rank.Ace)})
+    
+    constructor()
+    {
+        var i : Int = 0;
+        enumValues<Suit>().forEach(
+            { 
+                val s = it
+                enumValues<Rank>().forEach(
+                    { 
+                        val r = it
+                        //println("[${s.str}${r.str}]")
+                        this.deck[i]= PlayingCard(s,r)
+                        i++
+                    }
+                )
+            }
+        )
+    }
+}
+
+class MajorArcana
+{
+    var deck = Array<Card>(22, {Card(" ",Pair(0,0))})
+
+    constructor()
+    {
+        //Enum azoknak való akik nem tudják a szövegszerkeztőjüket használni :)
+        deck[0]  = (Card("The Fool", Pair(0,22)))
+        deck[1]  = (Card("The Magician", Pair(1,1)))
+        deck[2]  = (Card("The High Priestess", Pair(2,2)))
+        deck[3]  = (Card("The Empress", Pair(3,3)))
+        deck[4]  = (Card("The Emperor", Pair(4,4)))
+        deck[5]  = (Card("The Hierophant", Pair(5,5)))
+        deck[6]  = (Card("The Lovers", Pair(6,6)))
+        deck[7]  = (Card("The Chariot", Pair(7,7)))
+        deck[8]  = (Card("Strength", Pair(8,8)))
+        deck[9]  = (Card("The Hermit", Pair(9,9)))
+        deck[10] = (Card("Wheel of Fortune", Pair(10,10)))
+        deck[11] = (Card("Justice", Pair(11,11)))
+        deck[12] = (Card("The Hanged Man", Pair(12,12)))
+        deck[13] = (Card("Death", Pair(13,13)))
+        deck[14] = (Card("Temperance", Pair(14,14)))
+        deck[15] = (Card("The Devil", Pair(15,15)))
+        deck[16] = (Card("The Tower", Pair(16,16)))
+        deck[17] = (Card("The Star", Pair(17,17)))
+        deck[18] = (Card("The Moon", Pair(18,18)))
+        deck[19] = (Card("The Sun", Pair(19,19)))
+        deck[20] = (Card("Judgement", Pair(20,20)))
+        deck[21] = (Card("The World", Pair(21,21)))
+    }
+
+    fun pickRandomCard() : Card
+    {
+        val id = (0..(deck.size-1)).random()
+        return deck[id]
+    }
+}
+
+fun main(args: Array<String>)
+{
+    //Card
+
+    val theFool  = Card("The Fool",Pair( 0,22))
+    val theFoo2  = Card("The Fool",Pair( 0,22))
+    val theMoon  = Card("The Moon",Pair(18,18))
+
+    println("${theFool.p()} ${theMoon.p()}") // [The Fool] [The Moon]
+
+    println(theFool == theMoon) //false
+    println(theFool == theFoo2) //true
+    println(theFool <  theMoon) //true
+    println(theFool >= theMoon) //false
+
+    //Playing card
+
+    val card1 = PlayingCard(Suit.Heart, Rank.Ace)
+    val card2 = PlayingCard(Suit.Heart, Rank.Two)
+    println("${card1.p()}, ${card2.p()}, ${card2.value}") // [♥ A], [♥ 2], (2, 2)
+    println(card1 >= card2) // false
+    println(card1 == card1) // true
+
+    val deck = DeckOfPlayingCards()
+
+    deck.deck.forEach(
+         {
+            print("${it.p()} ") // Print the whole deck: [♠ A] [♠ 2] [♠ 3] [♠ 4] [♠ 5] [♠ 6] ... [♣ 8] [♣ 9] [♣10] [♣ J] [♣ Q] [♣ K]
+         }
+    )
+    println("")
+
+    // MiniJósda
+    var majorArcana = MajorArcana() 
+    
+    var sum  = 0
+    var last = Card("",Pair(0,0))
+    for (i in 1..7) 
+    {
+        var card = majorArcana.pickRandomCard()
+        print("${card.p()} ") // Kiír 7 random kártyát (lehet több egyforma): [The Lovers] [The Magician] [The Hierophant] [The Magician] [The Emperor] [The Chariot] [The Chariot]
+        sum += if (last<card)
+        {
+          1
+        }
+        else
+        { 
+          -1
+        }
+        last=card
+    }
+    
+    println("")
+    
+    //Sokkal nagyobb a "szerencse" valószínűsége (1. húzás után 1-ről indulunk, és a 0 is "szerencse")
+    
+    if (sum>=0){
+      println("Szerencséd lesz!")
+    }else{
+      println("Balszerencséd lesz!")
+    }
+
+}

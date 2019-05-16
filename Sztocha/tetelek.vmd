@@ -1,0 +1,259 @@
+# Sztochasztikus folyamatok
+
+**Váraljai Péter 2018 tavasz**
+__//Semmilyen felelőséget nem vállalok az itt leíratkért//__
+link=#Tartalomjegyzék;Tartalomjegyzék;
+
+==
+# Statisztikai alapfogalmak, becslés elmélet
+
+    ## Def Determinisztikus folyamat
+    Ha bizonyos körülmények együttese fenáll, akkor az --egyérteműen-- meghatározza a jelenség lefolyását.
+    (Pl: Desztillált víz, 1 bár nyomáson @@=>@ 100˙c fokon forr)
+
+    ## Def Sztochasztikus folyamat
+    Valamelyik szükséges körülmény hiányzik vagy véletlenszerűen változik, ekkor a folyamat lefolyása --bizonytalanná-- válik
+    (Pl: @@x=?@ bar nyomáson a tiszta víz már nem biztos, hogy 100 ◦ C fokon forr)
+    
+    ## Def Véletlen jelenség
+    Aminek e befolyását --nem-- határozzák meg egyértelműen a körülmények.
+
+    ## Statisztikai minta
+        Véges sok, --egymástól független--, --azonos eloszlású-- valószínűségi változók együttese.
+        (@@xi[1], xi[2], ... xi[n]@)
+        
+        ### Minta nagysága
+        @@n@ darab elem
+
+    ## Empírikus, tapasztalati jellemzők
+        ### Átlag
+        @@ m = sum(k=1;n;xi[k])/n 
+
+        ### Szórásnégyzet
+        @@ s_n^2 = sum(k=1;n;|xi_k-m|^2)/n
+
+        ### Korrrigált empírikus szórásnégyzet
+        @@ s_n^{¤2} = s_n^2 * n/{n-1} = sum(k=1;n;|xi_k-m|^2)/(n-1)
+
+    ## Statisztikai hipotézis
+    A valváltozóra vagy egy paraméterére teszek fel állítást és bizonyítom vagy cáfolom a helyességét.
+    @@H[0]@ hipotézis az hogy az álítás igaz.
+
+        ### Pl
+        - Mi lesz a várható érték? @@E(xi)=?@
+        - Két minta várható értéke azonos-e? @@E(xi) = E(eta)@
+        - Igaz-e hogy normális az elsozlású?
+
+    ## Elfogadási tartomány és Kritikus tartomány
+    @@H[0]@ hipotézis mellett @@mu = (xi[1]..xi[n])@ statisztikai érték kis valószínűségggel esik a kritikus és nagy valószínüséggel az elfogadási tartományba.
+
+    Ha a kritikus tartományba esik @@H[0]@-t elutasítjuk @@H[1]@-et elgogadjuk.
+
+        ### Def 
+        @@E cap K = emptyset@
+        @@E cup K = Omega@
+
+    ## Hipotézis vizsgálat menete
+    1) Mintavétel, mérés
+    2) @@H[0] H[1]@ hipotézis megalkotása
+    3) Korlát állítás az elsőfajú hiba valószínűségére @@0<epsi<1@
+    4) Próbafüggvényt konstruálunk a mintákból és hipotézisekből
+    5) Meghatározzuk a próba fv eloszlását ha @@H[0]@ igaz
+    6) Meghatározzuk az elfogadási és kritikus tartományt (5. pont alapján)
+    7) Ha belesik a 4. pontban konstruált próba fv belesik az eloszlásba akkor @@H[0]@ igaz
+
+    ## Hibák
+
+```bash
+H₀   |elfogadjuk elutasítjuk
+-----+----------------------
+igaz |oke        1. fajú
+hamis|2. fajú    oke
+```
+        ### Első fajú hiba
+        @@H[0]@ igaz mégis elvetjük @@P(|mu|>mu[alpha] | H[0])@
+
+        ### Másod fajú hiba
+        @@H[0]@ hamis mégis elfogadjuk
+
+==
+# Próbák, paraméteres próbák
+
+    ## u próba
+    @@n[1]@ minta, @@xi[1]..xi[n]@ független és @@N(m[0],sigma[1])@ eloszlású, @@sigma[1]@ ismert
+    @@n[2]@ minta, @@eta[1]..eta[n]@ független és @@N(m[0],sigma[2])@ eloszlású, @@sigma[2]@ ismert
+
+        ### Kétoldalú próba
+        @@ H[0]: m = m[0]
+        @@ H[1]: m != m[0]
+
+        ### Egyoldalú próba:
+        @@ H[0]: m <= m[0]
+        @@ H[1]: m > m[0] 
+
+        ### Próba függvény
+
+            #### 1 mintás
+            @@ u = {m-m[0]}/{sigma/sqrt(n)} ~ N(0,1)
+            
+            #### 2 mintás
+            @@ u = {m[1]-m[2]}/{sqrt( {sigma[1]^2}/{n[1]} + {sigma[2]^2}/{n[2]} )} ~ N(0,1)
+
+        ### Számolás
+        @@ P(|u|<a) = 2Phi(a)-1
+
+        ### Szignifikancia szint 
+        Az első fajú hiba nagysága (pl: 0.01; 0.05; 0.1)
+
+    ## t próba
+    Normális eloszlású valószínűségi változó várható értékére vonatkozó hipotézis.
+    
+    A --szórás ismeretlen-- becsüljük: 
+    @@ s_n^{¤2} = s_n^2 * n/{n-1} = sum(k=1;n;|xi_k-m|^2)/(n-1)
+
+    @@n[1]@ minta, @@xi[1]..xi[n]@ független és normális eloszlású, @@sigma[1]>0@
+    @@n[2]@ minta, @@eta[1]..eta[n]@ független és normális eloszlású, @@ sigma[2]>0@
+    @@-oo<m[0]<oo@
+
+        ### Próba függvény
+
+            #### 1 mintás
+            @@ t[emp]={m[1]-m[0]}/{ {s[n]^¤}/{sqrt(n)} }
+
+            #### 2 mintás
+            @@ t[emp]={m[1]-m[2]}/{sqrt( (n[1]-1)*s[1]^{¤2} + (n[2]-1)*s[2]^{¤2}  )} * sqrt({n[1]*n[2]*(n[1]+n[2]-2)}/{n[1]+n[2]} )
+
+        ### Számolás
+        @@ t[krit]=t(n-1,1-alpha,beta)
+        ahol az @@n-1@ a szabadságfok, @@alpha@ a szignifikancia szint, és @@beta@ hogy 1 vagy 2 oldali
+
+
+    ## f próba
+    @@H[0]@ hipotézis: 2 mint szórása megegyezik az adott szignifikancia szinten.
+    @@H[0]: s[xi]^¤ = s[eta]^¤
+
+        ### Próba statisztikai
+        @@ F[emp] = max( {s[xi]^¤}/{s[eta]^¤} , {s[eta]^¤}/{s[xi]^¤} )
+
+==
+# Nem paraméteres próbák
+
+    ## Def `chi^2` próbák
+    @@xi[1]..xi[n]@ független N(0,1) valószínűségi változók
+    Legyen @@eta=xi[1]^2+xi[2]^2+...+xi[n]^2@
+    Ekkor @@eta@ eloszlását @@n@ szabadságfokú @@chi^2@ eloszlásnak nevezzük.
+
+        ### Megjegyzés
+        A CHT alapján a @@chi^2@ eloszlás normális eloszlással közelíthető. (nagy @@n@-re)
+
+        ### Def `chi^2` próba
+        Legyen @@A[1]...A[r]@ teljes eseményrendszer 
+        @@sum(i=1;r;A[i])=I@ és @@A[i] cap A[j] = emptyset@ ahol @@i != j@ és @@I@ a teljes esemény halmaz.
+        Vizsgáljuk @@H[0]@-t: @@P(A[i])=p[i]@ Ahol @@szum(i=1;r;p[i])=1@
+        Ezt a hipotézis vizsgálatot nevezük @@chi^2@ próbának.
+
+        ### Def Polinomiális eloszlás
+        TFH n kisérlet során @@A[i]@ esemény @@mu[i]@-szer következik be.
+        @@n@ kimenetel van: @@szum(i=1;r;mu[i])=n@
+        @@mu[i]@ valószínűségi változók binomiális eloszlásúak: @@E(A[i])=n*p[i]@
+        függetlenek:
+        @@P(mu[1]=k[1]...mu[r]=k[r] | H[0])
+        @@=
+        @@P(mu[1]=k[1])*...*P(mu[r]=k[r]) = {n!}/{k[1]!*...*k[r]!}*(p[1]^{k[1]}*...*p[r]^{k[r]})
+
+        ### H₀ hipotézis
+        @@chi[emp]^2= sum(i=1;r; {(mu[i]-n*p[i])^2}/{n*p[i]} )
+        @@H[0]@ hipotézis akkor jó, ha @@chi^2@ kicsi. (@@mu[i]~~n*p[i]@)
+
+        ### Megjegyzés
+        @@chi^2@ egyenlő @@r@ darab standarizált binomiális elsozlású valószínűségi változók négyzetének összegével.
+
+    ## Illeszkedsé vizsgálat
+    //Van egy megfigyelt adatunk, és ehhez felteszünk egy eloszlást.//
+
+    Megfigyelt valószínűségi változók eloszlása megegyezik-e az előre megadottal.
+
+        ### Diszkrét
+        Adott @@(xi[i],p[i])@ diszkrét eloszlás @@i=1...r@, valamint @@xi[i]@-k függetlenek és azonos eloszlásúak.
+        @@q[i]@ jelölje az eloszlásukat.
+        @@mu[i]@ Megadja hogy a megfigyelés során hányszor vette fel az @@i@. értéket
+        @@n*p[i]@ Megadja hogy elméletileg mennyiszer veszi fel az @@i@. értéket 
+        @@H[0]: p[i]=q[i] AA i
+        @@H[1]: p[i]!=q[i] EE i
+
+        @@q(xi[1]..xi[r]) = {sum(k=1;r; (mu[i]-n*p[i])^2 )}/{n*p[i]}
+
+        szabadság fok: @@(r-1)@
+        szignifikancia szint: @@alpha@
+
+        Ha @@xi[emp]>xi[krit]@ akkor @@H[0]@-t elfogajuk.
+
+        ### Folytonos
+        Felosztjuk @@r darab@ részintervallumokra és ezeken nézzük a @@m[i]@-t és az @@n*p[i]@-t.
+
+    ## Homogenitás vizsgálat
+    @@ underbrace(x[i]...x[n] y[i]...y[m])@
+    minták függetlenek és azonos eloszlásúak
+
+    @@r@ darab részintervallumok van
+
+    @@mu[i]@ és @@nu[i]@ az @@i@. intervallumba eső elemek száma
+
+    @@chi^2 = n*m * sum(i=1;r; { ( {mu[i]}/{n} - {nu[i]}/{m} )^2 }/{mu[i]+nu[i]} )
+
+    szabadság fok: @@(r-1)@
+    szignifikancia szint: @@alpha@
+
+    ## Függetlenség vizsgálat
+    2 teljes eseméynrendszert vizsgál hogy van e köztük kapcsolat.
+
+
+    @@A[1]..A[r]@ és @@B[1]..B[s]@ teljes eseményredszerek
+
+    @@H[0]: P(A[i] cup B[i]) = P(A[i]) * P(B[i])@ azaz függetlenek
+    @@H[1]:@ nem függetlenek
+
+        ### Próbafüggvény
+        TODO
+
+==
+# Sztochasztikus folyamatok, stacionaritás fogalmai
+
+    ## 
+
+==
+# Mozgó átlag folyamatok
+
+==
+# AR, MA, ARMA folyamatok
+
+==
+# Előrejelzés
+
+==
+# Kovariancia függvény, jellemzői
+
+==
+# Spektrális sűrűség függvény
+
+==
+# Stacionárius folyamatok becslése
+
+==
+# Wiener szűrő
+
+==
+# Markov lánc alapfogalmai
+
+==
+# Állapotok osztályozása, jellemzői
+
+==
+# Folytonos idejű Markov láncok
+
+==
+# Tömegkiszolgálás
+
+==
+# Tartalomjegyzék
+:Table of Contents:30:

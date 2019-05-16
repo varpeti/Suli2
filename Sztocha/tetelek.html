@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://users.itk.ppke.hu/~varpe8/MathJax/MathJax.js?config=AM_SVG"></script>
+    <link rel="stylesheet" href="https://users.itk.ppke.hu/~varpe8/Highlight/styles/default.css">
+    <script src="https://users.itk.ppke.hu/~varpe8/Highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link type="text/css" rel="stylesheet" href="https://users.itk.ppke.hu/~varpe8/MarkdownCSS/markdown.css">
+</head>
+<body>
+<article class="markdown-body">
+    <p>
+        <h1 id='Sztochasztikus_folyamatok'>Sztochasztikus folyamatok</h1>
+    </p>
+    <p>
+        <b>Váraljai Péter 2018 tavasz</b><br>
+        <sub><i>Semmilyen felelőséget nem vállalok az itt leíratkért</i></sub><br>
+        <a href='#Tartalomjegyzék' target='_blank'>Tartalomjegyzék</a>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Statisztikai_alapfogalmak,_becslés_elmélet'>Statisztikai alapfogalmak, becslés elmélet</h1>
+    </p>
+    <p>
+        <h2 id='Def_Determinisztikus_folyamat'>Def Determinisztikus folyamat</h2>
+            Ha bizonyos körülmények együttese fenáll, akkor az <u>egyérteműen</u> meghatározza a jelenség lefolyását.<br>
+            (Pl: Desztillált víz, 1 bár nyomáson `=&gt` 100˙c fokon forr)<br>
+    </p>
+    <p>
+        <h2 id='Def_Sztochasztikus_folyamat'>Def Sztochasztikus folyamat</h2>
+            Valamelyik szükséges körülmény hiányzik vagy véletlenszerűen változik, ekkor a folyamat lefolyása <u>bizonytalanná</u> válik<br>
+            (Pl: `x=?` bar nyomáson a tiszta víz már nem biztos, hogy 100 ◦ C fokon forr)<br>
+    </p>
+    <p>
+        <h2 id='Def_Véletlen_jelenség'>Def Véletlen jelenség</h2>
+            Aminek e befolyását <u>nem</u> határozzák meg egyértelműen a körülmények.<br>
+    </p>
+    <p>
+        <h2 id='Statisztikai_minta'>Statisztikai minta</h2>
+                Véges sok, <u>egymástól független</u>, <u>azonos eloszlású</u> valószínűségi változók együttese.<br>
+                (`xi_{1}, xi_{2}, ... xi_{n}`)<br>
+    </p>
+    <p>
+        <h3 id='Minta_nagysága'>Minta nagysága</h3>
+                `n` darab elem<br>
+    </p>
+    <p>
+        <h2 id='Empírikus,_tapasztalati_jellemzők'>Empírikus, tapasztalati jellemzők</h2>
+        <h3 id='Átlag'>Átlag</h3>
+        <div class='math'>
+            ` m = sum_{k=1}^{n}(xi_{k})/n `
+        </div>
+    </p>
+    <p>
+        <h3 id='Szórásnégyzet'>Szórásnégyzet</h3>
+        <div class='math'>
+            ` s_n^2 = sum_{k=1}^{n}(|xi_k-m|^2)/n`
+        </div>
+    </p>
+    <p>
+        <h3 id='Korrrigált_empírikus_szórásnégyzet'>Korrrigált empírikus szórásnégyzet</h3>
+        <div class='math'>
+            ` s_n^{¤2} = s_n^2 * n/{n-1} = sum_{k=1}^{n}(|xi_k-m|^2)/(n-1)`
+        </div>
+    </p>
+    <p>
+        <h2 id='Statisztikai_hipotézis'>Statisztikai hipotézis</h2>
+            A valváltozóra vagy egy paraméterére teszek fel állítást és bizonyítom vagy cáfolom a helyességét.<br>
+            `H_{0}` hipotézis az hogy az álítás igaz.<br>
+    </p>
+    <p>
+        <h3 id='Pl'>Pl</h3>
+                - Mi lesz a várható érték? `E(xi)=?`<br>
+                - Két minta várható értéke azonos-e? `E(xi) = E(eta)`<br>
+                - Igaz-e hogy normális az elsozlású?<br>
+    </p>
+    <p>
+        <h2 id='Elfogadási_tartomány_és_Kritikus_tartomány'>Elfogadási tartomány és Kritikus tartomány</h2>
+            `H_{0}` hipotézis mellett `mu = (xi_{1}..xi_{n})` statisztikai érték kis valószínűségggel esik a kritikus és nagy valószínüséggel az elfogadási tartományba.<br>
+    </p>
+    <p>
+            Ha a kritikus tartományba esik `H_{0}`-t elutasítjuk `H_{1}`-et elgogadjuk.<br>
+    </p>
+    <p>
+        <h3 id='Def_'>Def </h3>
+                `E cap K = emptyset`<br>
+                `E cup K = Omega`<br>
+    </p>
+    <p>
+        <h2 id='Hipotézis_vizsgálat_menete'>Hipotézis vizsgálat menete</h2>
+            1) Mintavétel, mérés<br>
+            2) `H_{0} H_{1}` hipotézis megalkotása<br>
+            3) Korlát állítás az elsőfajú hiba valószínűségére `0&ltepsi&lt1`<br>
+            4) Próbafüggvényt konstruálunk a mintákból és hipotézisekből<br>
+            5) Meghatározzuk a próba fv eloszlását ha `H_{0}` igaz<br>
+            6) Meghatározzuk az elfogadási és kritikus tartományt (5. pont alapján)<br>
+            7) Ha belesik a 4. pontban konstruált próba fv belesik az eloszlásba akkor `H_{0}` igaz<br>
+    </p>
+    <p>
+        <h2 id='Hibák'>Hibák</h2>
+    </p>
+    <p>
+<div class='img0'><div class='img1'><pre><code class='bash'>H₀   |elfogadjuk elutasítjuk
+-----+----------------------
+igaz |oke        1. fajú
+hamis|2. fajú    oke
+</code></pre></div></div>
+        <h3 id='Első_fajú_hiba'>Első fajú hiba</h3>
+                `H_{0}` igaz mégis elvetjük `P(|mu|&gtmu_{alpha} | H_{0})`<br>
+    </p>
+    <p>
+        <h3 id='Másod_fajú_hiba'>Másod fajú hiba</h3>
+                `H_{0}` hamis mégis elfogadjuk<br>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Próbák,_paraméteres_próbák'>Próbák, paraméteres próbák</h1>
+    </p>
+    <p>
+        <h2 id='u_próba'>u próba</h2>
+            `n_{1}` minta, `xi_{1}..xi_{n}` független és `N(m_{0},sigma_{1})` eloszlású, `sigma_{1}` ismert<br>
+            `n_{2}` minta, `eta_{1}..eta_{n}` független és `N(m_{0},sigma_{2})` eloszlású, `sigma_{2}` ismert<br>
+    </p>
+    <p>
+        <h3 id='Kétoldalú_próba'>Kétoldalú próba</h3>
+        <div class='math'>
+            ` H_{0}: m = m_{0}`
+        </div>
+        <div class='math'>
+            ` H_{1}: m != m_{0}`
+        </div>
+    </p>
+    <p>
+        <h3 id='Egyoldalú_próba:'>Egyoldalú próba:</h3>
+        <div class='math'>
+            ` H_{0}: m &lt= m_{0}`
+        </div>
+        <div class='math'>
+            ` H_{1}: m &gt m_{0} `
+        </div>
+    </p>
+    <p>
+        <h3 id='Próba_függvény'>Próba függvény</h3>
+    </p>
+    <p>
+        <h4 id='1_mintás'>1 mintás</h4>
+        <div class='math'>
+            ` u = {m-m_{0}}/{sigma/sqrt(n)} ~ N(0,1)`
+        </div>
+    </p>
+    <p>
+        <h4 id='2_mintás'>2 mintás</h4>
+        <div class='math'>
+            ` u = {m_{1}-m_{2}}/{sqrt( {sigma_{1}^2}/{n_{1}} + {sigma_{2}^2}/{n_{2}} )} ~ N(0,1)`
+        </div>
+    </p>
+    <p>
+        <h3 id='Számolás'>Számolás</h3>
+        <div class='math'>
+            ` P(|u|&lta) = 2Phi(a)-1`
+        </div>
+    </p>
+    <p>
+        <h3 id='Szignifikancia_szint_'>Szignifikancia szint </h3>
+                Az első fajú hiba nagysága (pl: 0.01; 0.05; 0.1)<br>
+    </p>
+    <p>
+        <h2 id='t_próba'>t próba</h2>
+            Normális eloszlású valószínűségi változó várható értékére vonatkozó hipotézis.<br>
+    </p>
+    <p>
+            A <u>szórás ismeretlen</u> becsüljük: <br>
+        <div class='math'>
+            ` s_n^{¤2} = s_n^2 * n/{n-1} = sum_{k=1}^{n}(|xi_k-m|^2)/(n-1)`
+        </div>
+    </p>
+    <p>
+            `n_{1}` minta, `xi_{1}..xi_{n}` független és normális eloszlású, `sigma_{1}&gt0`<br>
+            `n_{2}` minta, `eta_{1}..eta_{n}` független és normális eloszlású, ` sigma_{2}&gt0`<br>
+            `-oo&ltm_{0}&ltoo`<br>
+    </p>
+    <p>
+        <h3 id='Próba_függvény'>Próba függvény</h3>
+    </p>
+    <p>
+        <h4 id='1_mintás'>1 mintás</h4>
+        <div class='math'>
+            ` t_{emp}={m_{1}-m_{0}}/{ {s_{n}^¤}/{sqrt(n)} }`
+        </div>
+    </p>
+    <p>
+        <h4 id='2_mintás'>2 mintás</h4>
+        <div class='math'>
+            ` t_{emp}={m_{1}-m_{2}}/{sqrt( (n_{1}-1)*s_{1}^{¤2} + (n_{2}-1)*s_{2}^{¤2}  )} * sqrt({n_{1}*n_{2}*(n_{1}+n_{2}-2)}/{n_{1}+n_{2}} )`
+        </div>
+    </p>
+    <p>
+        <h3 id='Számolás'>Számolás</h3>
+        <div class='math'>
+            ` t_{krit}=t(n-1,1-alpha,beta)`
+        </div>
+                ahol az `n-1` a szabadságfok, `alpha` a szignifikancia szint, és `beta` hogy 1 vagy 2 oldali<br>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2 id='f_próba'>f próba</h2>
+            `H_{0}` hipotézis: 2 mint szórása megegyezik az adott szignifikancia szinten.<br>
+        <div class='math'>
+            `H_{0}: s_{xi}^¤ = s_{eta}^¤`
+        </div>
+    </p>
+    <p>
+        <h3 id='Próba_statisztikai'>Próba statisztikai</h3>
+        <div class='math'>
+            ` F_{emp} = max( {s_{xi}^¤}/{s_{eta}^¤} , {s_{eta}^¤}/{s_{xi}^¤} )`
+        </div>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Nem_paraméteres_próbák'>Nem paraméteres próbák</h1>
+    </p>
+    <p>
+        <h2 id='Def_chi^2_próbák'>Def chi^2 próbák</h2>
+            `xi_{1}..xi_{n}` független N(0,1) valószínűségi változók<br>
+            Legyen `eta=xi_{1}^2+x_{2}^2+...+x_{n}^2`<br>
+            Ekkor `eta` eloszlását `n` szabadságfokú `chi^2` eloszlásnak nevezzük.<br>
+    </p>
+    <p>
+        <h3 id='Megjegyzés'>Megjegyzés</h3>
+                A CHT alapján a `chi^2` eloszlás normális eloszlással közelíthető. (nagy `n`-re)<br>
+    </p>
+    <p>
+        <h3 id='Def_`chi^2`_próba'>Def `chi^2` próba</h3>
+                Legyen `A_{1}...A_{r}` teljes eseményrendszer <br>
+                `sum_{i=1}^{r}(A_{i})=I` és `A_{i} cap A_{j} = emptyset` ahol `i != j` és `I` a teljes esemény halmaz.<br>
+                Vizsgáljuk `H_{0}`-t: `P(A_{i})=p_{i}` Ahol `szum_{i=1}^{r}(p_{i})=1`<br>
+                Ezt a hipotézis vizsgálatot nevezük `chi^2` próbának.<br>
+    </p>
+    <p>
+        <h3 id='Def_Polinomiális_eloszlás'>Def Polinomiális eloszlás</h3>
+                TFH n kisérlet során `A_{i}` esemény `mu_{i}`-szer következik be.<br>
+                `n` kimenetel van: `szum_{i=1}^{r}(mu_{i})=n`<br>
+                `mu_{i}` valószínűségi változók binomiális eloszlásúak: `E(A_{i})=n*p_{i}`<br>
+                függetlenek:<br>
+        <div class='math'>
+            `P(mu_{1}=k_{1}...mu_{r}=k_{r} | H_{0})`
+        </div>
+        <div class='math'>
+            `=`
+        </div>
+        <div class='math'>
+            `P(mu_{1}=k_{1})*...*P(mu_{r}=k_{r}) = {n!}/{k_{1}!*...*k_{r}!}*(p_{1}^{k_{1}}*...*p_{r}^{k_{r}})`
+        </div>
+    </p>
+    <p>
+        <h3 id='H₀_hipotézis'>H₀ hipotézis</h3>
+        <div class='math'>
+            `chi_{emp}^2= sum_{i=1}^{r}( {(mu_{i}-n*p_{i})^2}/{n*p_{i}} )`
+        </div>
+                `H_{0}` hipotézis akkor jó, ha `chi^2` kicsi. (`mu_{i}~~n*p_{i}`)<br>
+    </p>
+    <p>
+        <h3 id='Megjegyzés'>Megjegyzés</h3>
+                `chi^2` egyenlő `r` darab standarizált binomiális elsozlású valószínűségi változók négyzetének összegével.<br>
+    </p>
+    <p>
+        <h2 id='Illeszkedsé_vizsgálat'>Illeszkedsé vizsgálat</h2>
+            <i>Van egy megfigyelt adatunk, és ehhez felteszünk egy eloszlást.</i><br>
+    </p>
+    <p>
+            Megfigyelt valószínűségi változók eloszlása megegyezik-e az előre megadottal.<br>
+    </p>
+    <p>
+        <h3 id='Diszkrét'>Diszkrét</h3>
+                Adott `(xi_{i},p_{i})` diszkrét eloszlás `i=1...r`, valamint `xi_{i}`-k függetlenek és azonos eloszlásúak.<br>
+                `q_{i}` jelölje az eloszlásukat.<br>
+                `mu_{i}` Megadja hogy a megfigyelés során hányszor vette fel az `i`. értéket<br>
+                `n*p_{i}` Megadja hogy elméletileg mennyiszer veszi fel az `i`. értéket <br>
+        <div class='math'>
+            `H_{0}: p_{i}=q_{i} AA i`
+        </div>
+        <div class='math'>
+            `H_{1}: p_{i}!=q_{i} EE i`
+        </div>
+    </p>
+    <p>
+        <div class='math'>
+            `q_{xi_{1}..xi_{r}) = {sum(k=1}^{r}( (mu_{i}-n*p_{i})^2 )}/{n*p_{i}}`
+        </div>
+    </p>
+    <p>
+                szabadság fok: `(r-1)`<br>
+                szignifikancia szint: `alpha`<br>
+    </p>
+    <p>
+                Ha `xi_{emp}&gtxi_{krit}` akkor `H_{0}`-t elfogajuk.<br>
+    </p>
+    <p>
+        <h3 id='Folytonos'>Folytonos</h3>
+                Felosztjuk `r darab` részintervallumokra és ezeken nézzük a `m_{i}`-t és az `n*p_{i}`-t.<br>
+    </p>
+    <p>
+        <h2 id='Homogenitás_vizsgálat'>Homogenitás vizsgálat</h2>
+            ` underbrace(x_{i}...x_{n} y_{i}...y_{m})`<br>
+            minták függetlenek és azonos eloszlásúak<br>
+    </p>
+    <p>
+            `r` darab részintervallumok van<br>
+    </p>
+    <p>
+            `mu_{i}` és `nu_{i}` az `i`. intervallumba eső elemek száma<br>
+    </p>
+    <p>
+        <div class='math'>
+            `chi^2 = n*m * sum_{i=1}^{r}( { ( {mu_{i}}/{n} - {nu_{i}}/{m} )^2 }/{mu_{i}+nu_{i}} )`
+        </div>
+    </p>
+    <p>
+            szabadság fok: `(r-1)`<br>
+            szignifikancia szint: `alpha`<br>
+    </p>
+    <p>
+        <h2 id='Függetlenség_vizsgálat'>Függetlenség vizsgálat</h2>
+            2 teljes eseméynrendszert vizsgál hogy van e köztük kapcsolat.<br>
+    </p>
+    <p>
+    </p>
+    <p>
+            `A_{1}..A_{r}` és `B_{1}..B_{s}` teljes eseményredszerek<br>
+    </p>
+    <p>
+            `H_{0}: P(A_{i} cup B_{i}) = P(A_{i}) * P(B_{i})` azaz függetlenek<br>
+            `H_{1}:` nem függetlenek<br>
+    </p>
+    <p>
+        <h3 id='Próbafüggvény'>Próbafüggvény</h3>
+                TODO<br>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Sztochasztikus_folyamatok,_stacionaritás_fogalmai'>Sztochasztikus folyamatok, stacionaritás fogalmai</h1>
+    </p>
+    <p>
+        <h2 id=''></h2>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Mozgó_átlag_folyamatok'>Mozgó átlag folyamatok</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='AR,_MA,_ARMA_folyamatok'>AR, MA, ARMA folyamatok</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Előrejelzés'>Előrejelzés</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Kovariancia_függvény,_jellemzői'>Kovariancia függvény, jellemzői</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Spektrális_sűrűség_függvény'>Spektrális sűrűség függvény</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Stacionárius_folyamatok_becslése'>Stacionárius folyamatok becslése</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Wiener_szűrő'>Wiener szűrő</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Markov_lánc_alapfogalmai'>Markov lánc alapfogalmai</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Állapotok_osztályozása,_jellemzői'>Állapotok osztályozása, jellemzői</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Folytonos_idejű_Markov_láncok'>Folytonos idejű Markov láncok</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Tömegkiszolgálás'>Tömegkiszolgálás</h1>
+    </p>
+    <p>
+        <hr style='border-top: 5px double;'>
+        <h1 id='Tartalomjegyzék'>Tartalomjegyzék</h1>
+<div class='img0'><div class='img1'><pre style='background-color: white;'>
+<a href='#Sztochasztikus_folyamatok' style='color:black;' >1.............................Sztochasztikus folyamatok</a>
+<a href='#Statisztikai_alapfogalmak,_becslés_elmélet' style='color:black;' >2.............................Statisztikai alapfogalmak, becslés elmélet</a>
+<a href='#Def_Determinisztikus_folyamat' style='color:black;' >2.1...........................Def Determinisztikus folyamat</a>
+<a href='#Def_Sztochasztikus_folyamat' style='color:black;' >2.2...........................Def Sztochasztikus folyamat</a>
+<a href='#Def_Véletlen_jelenség' style='color:black;' >2.3...........................Def Véletlen jelenség</a>
+<a href='#Statisztikai_minta' style='color:black;' >2.4...........................Statisztikai minta</a>
+<a href='#Minta_nagysága' style='color:black;' >2.4.1.........................Minta nagysága</a>
+<a href='#Empírikus,_tapasztalati_jellemzők' style='color:black;' >2.5...........................Empírikus, tapasztalati jellemzők</a>
+<a href='#Átlag' style='color:black;' >2.5.1.........................Átlag</a>
+<a href='#Szórásnégyzet' style='color:black;' >2.5.2.........................Szórásnégyzet</a>
+<a href='#Korrrigált_empírikus_szórásnégyzet' style='color:black;' >2.5.3.........................Korrrigált empírikus szórásnégyzet</a>
+<a href='#Statisztikai_hipotézis' style='color:black;' >2.6...........................Statisztikai hipotézis</a>
+<a href='#Pl' style='color:black;' >2.6.1.........................Pl</a>
+<a href='#Elfogadási_tartomány_és_Kritikus_tartomány' style='color:black;' >2.7...........................Elfogadási tartomány és Kritikus tartomány</a>
+<a href='#Def_' style='color:black;' >2.7.1.........................Def </a>
+<a href='#Hipotézis_vizsgálat_menete' style='color:black;' >2.8...........................Hipotézis vizsgálat menete</a>
+<a href='#Hibák' style='color:black;' >2.9...........................Hibák</a>
+<a href='#Első_fajú_hiba' style='color:black;' >2.9.1.........................Első fajú hiba</a>
+<a href='#Másod_fajú_hiba' style='color:black;' >2.9.2.........................Másod fajú hiba</a>
+<a href='#Próbák,_paraméteres_próbák' style='color:black;' >3.............................Próbák, paraméteres próbák</a>
+<a href='#u_próba' style='color:black;' >3.1...........................u próba</a>
+<a href='#Kétoldalú_próba' style='color:black;' >3.1.1.........................Kétoldalú próba</a>
+<a href='#Egyoldalú_próba:' style='color:black;' >3.1.2.........................Egyoldalú próba:</a>
+<a href='#Próba_függvény' style='color:black;' >3.1.3.........................Próba függvény</a>
+<a href='#1_mintás' style='color:black;' >3.1.3.1.......................1 mintás</a>
+<a href='#2_mintás' style='color:black;' >3.1.3.2.......................2 mintás</a>
+<a href='#Számolás' style='color:black;' >3.1.4.........................Számolás</a>
+<a href='#Szignifikancia_szint_' style='color:black;' >3.1.5.........................Szignifikancia szint </a>
+<a href='#t_próba' style='color:black;' >3.2...........................t próba</a>
+<a href='#Próba_függvény' style='color:black;' >3.2.1.........................Próba függvény</a>
+<a href='#1_mintás' style='color:black;' >3.2.1.1.......................1 mintás</a>
+<a href='#2_mintás' style='color:black;' >3.2.1.2.......................2 mintás</a>
+<a href='#Számolás' style='color:black;' >3.2.2.........................Számolás</a>
+<a href='#f_próba' style='color:black;' >3.3...........................f próba</a>
+<a href='#Próba_statisztikai' style='color:black;' >3.3.1.........................Próba statisztikai</a>
+<a href='#Nem_paraméteres_próbák' style='color:black;' >4.............................Nem paraméteres próbák</a>
+<a href='#Def_chi^2_próbák' style='color:black;' >4.1...........................Def chi^2 próbák</a>
+<a href='#Megjegyzés' style='color:black;' >4.1.1.........................Megjegyzés</a>
+<a href='#Def_`chi^2`_próba' style='color:black;' >4.1.2.........................Def `chi^2` próba</a>
+<a href='#Def_Polinomiális_eloszlás' style='color:black;' >4.1.3.........................Def Polinomiális eloszlás</a>
+<a href='#H₀_hipotézis' style='color:black;' >4.1.4.........................H₀ hipotézis</a>
+<a href='#Megjegyzés' style='color:black;' >4.1.5.........................Megjegyzés</a>
+<a href='#Illeszkedsé_vizsgálat' style='color:black;' >4.2...........................Illeszkedsé vizsgálat</a>
+<a href='#Diszkrét' style='color:black;' >4.2.1.........................Diszkrét</a>
+<a href='#Folytonos' style='color:black;' >4.2.2.........................Folytonos</a>
+<a href='#Homogenitás_vizsgálat' style='color:black;' >4.3...........................Homogenitás vizsgálat</a>
+<a href='#Függetlenség_vizsgálat' style='color:black;' >4.4...........................Függetlenség vizsgálat</a>
+<a href='#Próbafüggvény' style='color:black;' >4.4.1.........................Próbafüggvény</a>
+<a href='#Sztochasztikus_folyamatok,_stacionaritás_fogalmai' style='color:black;' >5.............................Sztochasztikus folyamatok, stacionaritás fogalmai</a>
+<a href='#' style='color:black;' >5.1...........................</a>
+<a href='#Mozgó_átlag_folyamatok' style='color:black;' >6.............................Mozgó átlag folyamatok</a>
+<a href='#AR,_MA,_ARMA_folyamatok' style='color:black;' >7.............................AR, MA, ARMA folyamatok</a>
+<a href='#Előrejelzés' style='color:black;' >8.............................Előrejelzés</a>
+<a href='#Kovariancia_függvény,_jellemzői' style='color:black;' >9.............................Kovariancia függvény, jellemzői</a>
+<a href='#Spektrális_sűrűség_függvény' style='color:black;' >10............................Spektrális sűrűség függvény</a>
+<a href='#Stacionárius_folyamatok_becslése' style='color:black;' >11............................Stacionárius folyamatok becslése</a>
+<a href='#Wiener_szűrő' style='color:black;' >12............................Wiener szűrő</a>
+<a href='#Markov_lánc_alapfogalmai' style='color:black;' >13............................Markov lánc alapfogalmai</a>
+<a href='#Állapotok_osztályozása,_jellemzői' style='color:black;' >14............................Állapotok osztályozása, jellemzői</a>
+<a href='#Folytonos_idejű_Markov_láncok' style='color:black;' >15............................Folytonos idejű Markov láncok</a>
+<a href='#Tömegkiszolgálás' style='color:black;' >16............................Tömegkiszolgálás</a>
+<a href='#Tartalomjegyzék' style='color:black;' >17............................Tartalomjegyzék</a>
+</pre></div></div>
+    </p>
+</article>
+</body>
+</html>
+

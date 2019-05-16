@@ -1,0 +1,20 @@
+new_group
+add_rectangle 0 0 2 208
+flip_horizontal 103
+add_rectangle 0 0 208 2
+new_group
+add_rectangle 0 0 208 2
+flip_vertical 103
+new_group
+add_rectangle 0 0 2 208
+merge
+merge
+# kommet
+merge
+new_group
+
+    
+add_line_segments 0.0 -100.0 96.1826 27.3663 -52.6432 85.0217 -67.3696 -73.9009 89.5163 -44.5738 18.375 98.2973 -99.5734 -9.2268 36.1242 -93.2472 79.8017 60.2635 -79.8017 60.2635 -36.1242 -93.2472 99.5734 -9.2268 -18.375 98.2973 -89.5163 -44.5738 67.3696 -73.9009 52.6432 85.0217 -96.1826 27.3663 0.0 -100.0
+add_circle 0 0 30
+translate 104 104
+merge

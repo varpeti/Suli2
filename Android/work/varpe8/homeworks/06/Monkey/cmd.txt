@@ -1,0 +1,1 @@
+adb shell monkey -p ml.varpeti.hf06 --pct-touch 50 --pct-motion 5 --pct-trackball 5 --pct-syskeys 5 --pct-nav 5 --pct-majornav 5 --pct-appswitch 5 --pct-flip 5 --pct-anyevent 5 --pct-pinchzoom 5 --pct-rotation 5 --throttle 50 -v 999 >monkeytest_output.txt

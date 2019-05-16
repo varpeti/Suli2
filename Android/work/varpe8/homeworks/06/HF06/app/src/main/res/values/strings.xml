@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HF06</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="b0">0</string>
+    <string name="b1">1</string>
+    <string name="bs">\u232b</string>
+    <string name="del">DEL</string>
+    <string name="u2b09">⬉</string>
+    <string name="u2b08">⬈</string>
+</resources>

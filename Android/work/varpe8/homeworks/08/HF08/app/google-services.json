@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849189783260",
+    "firebase_url": "https://hf08-1fb6b.firebaseio.com",
+    "project_id": "hf08-1fb6b",
+    "storage_bucket": "hf08-1fb6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849189783260:android:0919d20b81fb5e17",
+        "android_client_info": {
+          "package_name": "ml.varpeti.hf08"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849189783260-68b2g8usllnlof93aqsgjmenmkblo2ep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKq5doEJrz979TtiVAKN6XFzWxEgZWWIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849189783260-68b2g8usllnlof93aqsgjmenmkblo2ep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

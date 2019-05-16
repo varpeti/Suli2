@@ -1,0 +1,104 @@
+Név:
+Neptun-kód:
+
+ZH
+Adatbáziskezelés haladóknak, 2017.05.11.
+Összpontszám: 30 (15+15)
+
+----------
+
+JDBC(15 pont)
+
+Mi az a JDBC? 
+    Java database connectivity:
+        Java alakalmazáson belül felépített sql kódot lehet egy adatbázis kapcsoltaon keresztül futtatni.
+
+Mi az a JDBC driver? 
+    kliens oldali adapter ami a java program kéréseit alakítja az adatbázis szerver álltal értelmezhetővé
+
+Milyen típusai vannak? (Melyik a leggyakoribb típus, ami egyben az Oracle thin driver típusa is?)
+    jdbc-odbc híd
+    natív driver
+    prue java, hálózati protoll driver
+    prue java, natív protokoll driver
+
+Mik a kapcsolatfelépítés lépései?
+    Betöljük a Java programba a drivert
+    Csatlakozzunk az adatforráshoz (drivert managertől kérünk egy connectiont)
+    végrehajtjuk az sql utasítást (Connenctiontól pedig egy statmentet)
+
+Milyen interfészeket tartalmaz a JDBC API?
+    Java - Adatforrrás interfész
+
+Mi az a Statement, PreparedStatement és CallableStatement?
+    Statment:
+        Előre definiált SQl lekérdezést hajtja végre
+    PreparedStatement:
+        Paraméterezhető SQL lekérdezést hajt végre
+    CallableStatement:
+        Eljárás és/vagy függvényhívást hajt végre
+
+Mi a különbség a Statement és a PreparedStatement között?
+    PreparedStatement: 
+        újrahasználható más paraméterekkel
+
+Mik a PreparedStatement tulajdonságai/előnyei?
+    Cachelődik
+    Csak 1x készül el a lekérdezéi terv
+    SQL injection ellen is véd
+
+Miért használnak connection pool-t?
+    Mert a kapcsolat kiépítés drága és lassú.
+
+Mi az a SQL (code) injection?
+    Amikor a felhasználó olyan inputot ad meg amit nem megfelelően kezel a program és SQL kifejezésként értelmezi.
+    PL.: (admin' OR 1=1 --")
+
+JDBC megfelelője Microsoft világban (pl. c#, Visual Basic)
+    ODBC
+
+---------------------
+
+ORM, Hibernate (15 pont)
+
+Mi az az Object-Relational Mapping (ORM)?
+    Objektum relációs leképzés:
+        Az objektum orientált rendszert képez le nem objektum orientált rendszerbe, pl realation database
+
+Mi az a hibernate?
+    Java alapú ORM
+    hatékony, és egyszerű
+
+Mik az előnyei?
+    Objektumokat használ táblák helyett
+    Gyors
+    Egyszerű
+    Karbantartható
+    Adatbázis kezelőtöl független
+    Cahce Mohó/Lusta
+
+Alapesetben minek felel meg egy osztály:
+    Tábla
+Egy példány:
+    Sor
+
+Milyen két móda van a konverziós szabályok megadásának?
+    Konfigurációs file (XML)
+    Annotáció
+
+Milyen kardinalitású kapcsolatokat képes kezelni a Hibernate?
+    1-1
+    1-N
+    N-1
+    N-M
+
+Milyen két lehetőség van a kapcsolódó objektumok betöltésére?
+    Mohó
+    Lusta
+
+(Gondolkodós feladat; próbálja megindokolni)
+    Használna ORM-et (Hibernate-et) egy tranzakciós alkalmazás esetén?
+        Igen, mert felgyorsíthatja a fejlesztést
+
+    Egy adattárházban?
+        Nem használnék, inkább egy jobb erre való (Tableau) programot.

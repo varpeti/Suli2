@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#$1 = '$file_name'
+#$2 = '$file_base_name'
+
+##################A projekt paraméterei:################
+fordito="javac"
+projectfileok=""
+findall=true        # ha false akkor csak az (elérési úttal) beírt projectfileokat fordítja
+parameterek=""
+futtato="java"
+nev="hu/ppke/itk/java/second/io/ReadWrite"
+futtatas=true
+########################################################
+
+
+
+################Fordítás és futtatás:###################
+if [[ ! -d "bin" ]]; then
+	mkdir "bin"
+fi
+
+if [[ "$findall" = true ]]; then
+    find -name "*.java" > sources.txt
+    $fordito -d bin $parameterek @sources.txt
+    rm sources.txt
+else
+    $fordito -d bin $parameterek $projectfileok
+fi
+
+if [[ "$futtatas" = true ]]; then
+    gnome-terminal -x $futtato -cp bin $nev
+fi
+########################################################

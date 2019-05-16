@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HF04Java</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="description">Description:</string>
+    <string name="send">Send</string>
+</resources>

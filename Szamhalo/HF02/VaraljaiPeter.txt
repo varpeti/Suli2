@@ -1,0 +1,22 @@
+1) Létesítsünk UDP-kapcsolatot netcat-tel, a forgalmat mentsük tcpdump-pal vagy wireshark-kal.  
+    wireshark
+    szerver:
+        lua szerver.lua
+        (udp echo szerver 3773-as porton luában)
+    kliens:
+        nc -u localhost 3773
+            (udp kliens os által osztott porton 37733-as port a target netcattel)
+
+2) Milyen ethernet címre mennek az ALL-PIM-ROUTERS multicast csoportba küldött üzenetek?
+    01:00:5E:00:00:0D
+3) 
+    MTU     -   IP_fejléc   = max_data_size
+    1470    -   20          = 1450
+
+    1700    ->  1470 (1450+20) és 250 (250+20)
+4)
+    Nem a multicast üzenetek küldése, hanem „szervezés”, vezérlés a feladata
+    Host membership query/report protokoll
+
+
+

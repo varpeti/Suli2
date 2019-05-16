@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#$1 = '$file_name'
+#$2 = '$file_base_name'
+
+##################A projekt paraméterei:################
+fordito="/home/itep/Programok/kotlin-native-linux-1.3.11/bin/kotlinc"
+projectfileok=""
+findall=true        # ha false akkor csak az (elérési úttal) beírt projectfileokat fordítja
+parameterek=""
+futtatas=true
+########################################################
+
+
+
+################Fordítás és futtatás:###################
+if [[ ! -d "bin" ]]; then
+	mkdir "bin"
+fi
+
+if [[ "$findall" = true ]]; then
+    find -name "*.kt" > sources.txt
+    $fordito @sources.txt
+    rm sources.txt
+else
+    $fordito $projectfileok
+fi
+
+mv program.kexe bin/program.kexe
+
+if [[ "$futtatas" = true ]]; then
+	bin/program.kexe
+fi
+########################################################

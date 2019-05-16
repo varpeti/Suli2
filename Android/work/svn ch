@@ -1,0 +1,2 @@
+#!/bin/bash
+svn checkout https://repo.itk.ppke.hu/android/varpe8

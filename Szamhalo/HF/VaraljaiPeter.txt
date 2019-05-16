@@ -1,0 +1,47 @@
+nmap segítségével állapítsa meg, hogy milyen TCP szolgáltatások működnek a turdus.itk.ppke.hu gépen! 
+
+> nmap turdus.itk.ppke.hu
+    -
+    Starting Nmap 7.01 ( https://nmap.org ) at 2017-11-14 15:18 CET
+    Nmap scan report for turdus.itk.ppke.hu (193.225.109.44)
+    Host is up (0.0081s latency).
+    Not shown: 999 closed ports
+    PORT   STATE SERVICE
+    22/tcp open  ssh
+
+    Nmap done: 1 IP address (1 host up) scanned in 3.87 seconds
+
+    -Tehát jelenleg csak az ssh.
+
+
+> wireshark
+    - Mi található a TCP header src és DST port headerjében?
+        scr = 38472 - a kliens az OS álltal kiosztott portja
+        dst = 3773  - az echo szerver OS-től kért portja
+        ezek felcserélődnek annak függvényében hogy ki a küldő
+    - Milyen flag-ek állnak az első 5 csomagban?
+        SYN         c->s    kapcsolódás
+        SYN ACK     s->c    kapcsolódás és kapcsolat elfogadása
+        ACK         c->s    kapcsolat elfogadása
+        PSH ACK     c->s    első csomag felküldése
+        ACK         s->c    első csomag elfogadva
+    - Mekkora a window méret az első 5 csomagban?
+        43690
+        43690
+        342
+        342
+        342
+    - Ki kezdeményezte a kapcsolat lezárását? (TCP header szerint)
+        A kliens
+    - Milyen flagek álltak az utolsó 5 csomagban? 
+        PSH ACK     s->c    csomag küldés
+        ACK         c->s    csomag elfogadva
+        FIN ACK     c->s    kapcsolat bontás és csomag elfogadva
+        FIN ACK     s->c    kapcsolat bontás és bontás elfogadva
+        ACK         c->s    bontás elfogadva
+    - Mekkora volt a window méret az utolsó 5 csomagban?
+        342
+        342
+        342
+        342
+        342

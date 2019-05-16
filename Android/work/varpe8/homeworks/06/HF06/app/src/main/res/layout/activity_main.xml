@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/b0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/add" android:layout_marginEnd="8dp"
+            android:textAlignment="textStart"/>
+    <Button
+            android:text="@string/b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b00"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/b0" android:onClick="onClickB0"/>
+    <Button
+            android:text="@string/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b01" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b00" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:onClick="onClickB0"/>
+    <Button
+            android:text="@string/bs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b0bs" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b01" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:onClick="onClickB0"/>
+    <Button
+            android:text="@string/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b0del" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b0bs" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:onClick="onClickB0"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/b1" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/add" android:layout_marginStart="8dp"
+            android:textAlignment="textEnd"/>
+    <Button
+            android:text="@string/b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b10"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/b1" android:onClick="onClickB1"/>
+    <Button
+            android:text="@string/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b11"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b10" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:onClick="onClickB1"/>
+    <Button
+            android:text="@string/bs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b1bs" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b11"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:onClick="onClickB1"/>
+    <Button
+            android:text="@string/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b1del" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b1bs"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:onClick="onClickB1"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/b2" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sub" app:layout_constraintStart_toEndOf="@+id/b01"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/b11" android:layout_marginEnd="8dp"
+            android:textAlignment="center"/>
+    <Button
+            android:text="@string/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:onClick="onClickB2"/>
+    <Button
+            android:text="@string/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/add"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:onClick="onClickB2"/>
+    <Button
+            android:text="@string/u2b09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b2" app:layout_constraintStart_toEndOf="@+id/b0bs"
+            android:layout_marginStart="8dp"
+            android:id="@+id/popb0" android:onClick="onClickB2"/>
+    <Button
+            android:text="@string/u2b08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b2"
+            android:id="@+id/popb1" app:layout_constraintEnd_toStartOf="@+id/b1bs" android:layout_marginEnd="8dp"
+            android:onClick="onClickB2"/>
+</android.support.constraint.ConstraintLayout>

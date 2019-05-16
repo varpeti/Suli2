@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Copy the whole tree
+mkdir $(find . -type d | sed 's/^[.]/..\/large/')
+
+# Find every large file and save it to source file
+find . -type f -size +500 >s
+# Set the destinaton (target) 4 every source
+sed 's/^[.]/..\/large/' <s >t
+
+# Move all large file into the new tree
+while read -r a && read -r b <&3; do
+    mv $a $b;
+done <s 3<t

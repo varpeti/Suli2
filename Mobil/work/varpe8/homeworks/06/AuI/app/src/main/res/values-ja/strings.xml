@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AuI</string>
+    <string-array name = "btnNames">
+        <item>私をタップしてください！</item>
+        <item>彼ではない！私！</item>
+        <item>これに触れる！</item>
+        <item>内容</item>
+        <item>私をタップしてください！</item>
+        <item>無料キャンディ</item>
+        <item>＆lt;3 </item>
+        <item> 3つ未満</item>
+        <item>&lt;!--Ninja--&gt;</item>
+        <item>ミーン</item>
+        <item> Meow x2 </item>
+        <item> Meow ^ 2 </item>
+        <item> Meow ^^ 2 </item>
+        <item> ^^はTetrationを意味します</item>
+        <item>その大きな演算子</item>
+        <item>大男4人だけ</item>
+        <item>私をタップしてください！</item>
+    </string-array>
+
+    <string-array name = "btnClick">
+        <item>ありがとうございました！</item>
+        <item>Jupeeeee！</item>
+        <item>内容</item>
+        <item>これに触れる！</item>
+        <item> Mooooore！</item>
+        <item>ハハのキャンディー4ユー</item>
+        <item> 3つ未満</item>
+        <item>＆lt;3 </item>
+        <item>&lt;!--Ninja--&gt; </item>
+        <item> Purr </item>
+        <item> Purr x2 </item>
+        <item> Purr ^ 2 </item>
+        <item> Purr ^^ 2 </item>
+        <item> Jeah Tetration </item>
+        <item>その本当に大きな演算子</item>
+        <item> u broのような</item>
+        <item>キャンディー：</item>
+    </string-array>
+</resources>

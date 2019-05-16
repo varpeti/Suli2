@@ -1,0 +1,7 @@
+#!/bin/bash
+
+parameterek="/home/itep/Dokumentumok/Suli/proDataB/work/10C/javax.persistence_2.0.0.jar:/home/itep/Programok/Oracle/ojdbc8-full/ojdbc8.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/antlr-2.7.7.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/asd.txt:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/classmate-1.3.0.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/dom4j-1.6.1.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/hibernate-commons-annotations-5.0.1.Final.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/hibernate-core-5.2.11.Final.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/javassist-3.20.0-GA.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/jboss-logging-3.3.0.Final.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/lucene-core-5.5.4.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/lucene-queryparser-5.5.4.jar:/home/itep/Dokumentumok/Programok/Oracle/hibernate-search-5.8.0.Final/dist/lib/required/xml-apis-1.3.03.jar"
+futtato="java"
+nev="hibernate/Main"
+
+$futtato -cp bin:$parameterek $nev

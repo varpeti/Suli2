@@ -1,0 +1,21 @@
+1)
+    IPv4 A
+    IPv6 AAAA
+    mailserver MX
+    nameserver NS
+
+
+2)  Milyen parancs segítségével jutott hozzá az információhoz?
+        dig ip10-labor.alaprajz.com any
+    
+
+    Mikor módosult a zóna utoljára?
+        SOA rekordból:
+            2017.12.08
+    
+    Az AAAA rekord ...
+        mindig egy ipv6-nev osszerendelest tartalmaz
+        
+
+
+

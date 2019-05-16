@@ -1,0 +1,1231 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>Varaljai_Peter_Balazs_documentation</title></head><body><article class="markdown-body"><h6>
+<a id="user-content-introduction--to--database--systems" class="anchor" href="#introduction--to--database--systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction​ ​ to​ ​ Database​ ​ Systems</h6>
+<h1>
+<a id="user-content-database-for-a-simple-forum-website" class="anchor" href="#database-for-a-simple-forum-website" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Database for a simple forum website</h1>
+<p>Project by: <strong>Váraljai Péter</strong></p>
+<p>Project Supervisor: <strong>Gábor​ Csaba</strong></p>
+<hr>
+<h2>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction​</h2>
+<p>I would like to create a small database to show examples of all types of entities and relationships. I will store the data of a small forum, including useres, admins, their messages, post, and comments. (ect)</p>
+<h2>
+<a id="user-content-description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
+<ul>
+<li>
+<p><strong>Board:</strong>
+Figurarly this is the "main menu" every <strong>Room</strong> is listed under different <strong>Board</strong>. It can be created or modified by any <strong>Admin</strong> who has a right permission level.</p>
+</li>
+<li>
+<p><strong>Room:</strong>
+<strong>Room</strong>s are attached to <strong>Board</strong>s. Every <strong>Room</strong> contain different <strong>Post</strong> from different <strong>User</strong>s. It can be created by any <strong>User</strong>. It has creation time, and it can be locked by any <strong>Admin</strong>.</p>
+</li>
+<li>
+<p><strong>Post:</strong>
+<strong>Post</strong> are attached to <strong>Room</strong>s or <strong>UserWall</strong>s. Users can <strong>Comment</strong> any <strong>Post</strong>s (except if the <strong>Room</strong> is locked).
+It has creation time, belongs to an <strong>User</strong>, and contains a message.</p>
+</li>
+<li>
+<p><strong>Comment:</strong>
+Every <strong>User</strong> can <strong>Comment</strong> their/other <strong>User</strong>s <strong>Post</strong>.
+It has creation time, belongs to an <strong>User</strong>, and contains a message.</p>
+</li>
+<li>
+<p><strong>ChatRoom:</strong>
+<strong>Chatroom</strong>s are automaticaly created rooms where <strong>User</strong>s and <strong>Admin</strong>s can send <strong>Message</strong>s to each other.
+Multiple <strong>User</strong>s can be in the same <strong>ChatRoom</strong>, and <strong>User</strong>s can be in multiple <strong>ChatRoom</strong>s.</p>
+</li>
+<li>
+<p><strong>Message:</strong>
+Every <strong>User</strong> can send <strong>Message</strong>s to other <strong>User</strong>s are in the same <strong>ChatRoom</strong>.
+It has creation time, belongs to a <strong>User</strong>, and contains a message.</p>
+</li>
+<li>
+<p><strong>AbsUser:</strong>
+This is the abstract user. It stores username and hashed and encrypted password.</p>
+</li>
+<li>
+<p><strong>User:</strong>
+This is an ISA subclass of AbsUser. It has registration date and <strong>UserWall</strong>.</p>
+</li>
+<li>
+<p><strong>Admin:</strong>
+This is an ISA subclass of AbsUser. It has permission level, and a <strong>Log</strong>ger.</p>
+</li>
+<li>
+<p><strong>UserWall:</strong>
+This is belongs to a <strong>User</strong>. Other <strong>User</strong>s can <strong>Post</strong> their opinions here.</p>
+</li>
+<li>
+<p><strong>Log:</strong>
+This is a weak table. It is belongs to an <strong>Admin</strong> and cointains every modifications an <strong>Admin</strong> done.</p>
+</li>
+</ul>
+<h2>
+<a id="user-content-er-diagramm" class="anchor" href="#er-diagramm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>E/R Diagramm</h2>
+<p><a href="/home/itep/Dokumentumok/Suli/DataB/bead/Varaljai_Peter_Balazs_ER.png" target="_blank"><img src="/home/itep/Dokumentumok/Suli/DataB/bead/Varaljai_Peter_Balazs_ER.png" alt="ER Diagramm" title="ER Diagramm" style="max-width:100%;"></a></p>
+<h2>
+<a id="user-content-relational-model" class="anchor" href="#relational-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Relational model</h2>
+<p><code>primary key(s)</code></p>
+<p><strong>Board</strong>(<code>name</code>, permissionlvl, rAdmin)</p>
+<p><strong>Plvl_Board</strong>(<code>rBoard</code>,<code>lvl</code>)</p>
+<p><strong>Room</strong>(<code>name</code>, islocked, date, time, rBoard, rAdmin)</p>
+<p><strong>Post</strong>(<code>id</code>, message, date, time, rRoom, rUserWall, rAbsUser)</p>
+<p><strong>Comment</strong>(<code>id</code>, message, date, time, rPost, rAbsUser)</p>
+<p><strong>ChatRoom</strong>(<code>id</code>)</p>
+<p><strong>ChatRoom_AbsUser</strong>(<code>rChatRoom</code>,<code>rAbsUser</code>)</p>
+<p><strong>Message</strong>(<code>id</code>, message, date, time, rChatroom, rAbsUser)</p>
+<p><strong>AbsUser</strong>(<code>name</code>, pw)</p>
+<p><strong>User</strong>(<code>iAbsUser</code>, regdate, regtime)</p>
+<p><strong>Admin</strong>(<code>iAbsUser</code>, permissionlvl)</p>
+<p><strong>Plvl_Admin</strong>(<code>rAdmin</code>,<code>lvl</code>)</p>
+<p><strong>UserWall</strong>(<code>rUser</code>)</p>
+<p><strong>Log</strong>(<code>rAdmin</code>,message)</p>
+<h2>
+<a id="user-content-querries" class="anchor" href="#querries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Querries</h2>
+<h3>
+<a id="user-content-1" class="anchor" href="#1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.</h3>
+<p>Melyik az a top 10 <strong>Post</strong> aminek a legtöbb <strong>Comment</strong>je van?</p>
+<p>What are the top 10 most popular <strong>Post</strong>?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">select</span> <span class="pl-k">*</span>
+<span class="pl-k">from</span> 
+( 
+    <span class="pl-k">select</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>, <span class="pl-c1">count</span>(<span class="pl-c1">Comment2</span>.<span class="pl-c1">id</span>) <span class="pl-k">as</span> Comments
+    <span class="pl-k">from</span> Post, Comment2 
+    <span class="pl-k">where</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">rPost</span> <span class="pl-k">=</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>
+    <span class="pl-k">group by</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>
+    <span class="pl-k">order by</span> Comments <span class="pl-k">desc</span>
+)
+<span class="pl-k">where</span> rownum <span class="pl-k">&lt;=</span><span class="pl-c1">10</span>
+;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>        ID   COMMENTS
+---------- ----------
+ 263887968         40
+1318491853         35
+  56601904         34
+  56132275         33
+ 623349058         29
+ 264115052         29
+1344876445         28
+ 468665454         28
+ 404364516         27
+ 139001579         27
+
+ 10 rows selected.</pre></div>
+<p>Relational algebra:</p>
+<pre><code>σ rownum() &gt; 0 and rownum() ≤ 10 ρ t1 ( τ Comments desc π Post.id, Comments γ Post.id; COUNT(Comment2.id)→Comments σ Comment2.rPost = Post.id Post ⨯ Comment2)
+</code></pre>
+<h3>
+<a id="user-content-2" class="anchor" href="#2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.</h3>
+<p>Melyek azok a <strong>Board</strong>ok, és ki csinálta, amiket nem 6-os vagy 4-es jogú <strong>Admin</strong> készített?</p>
+<p>What are the name of the <strong>Board</strong>s and who are the creators, where the creator <strong>Admin</strong> permissionlvl isn't 6 nor 4?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">select</span> <span class="pl-c1">Board</span>.<span class="pl-c1">name</span> <span class="pl-k">as</span> BoardName, <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span> <span class="pl-k">as</span> AdminName
+<span class="pl-k">from</span> AbsUser, Board
+<span class="pl-k">where</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span> <span class="pl-k">like</span> <span class="pl-c1">Board</span>.<span class="pl-c1">rAdmin</span>
+    <span class="pl-k">and</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span> <span class="pl-k">!=</span> all 
+    (
+        <span class="pl-k">select</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">iAbsUser</span>
+        <span class="pl-k">from</span> Admin
+        <span class="pl-k">where</span> permissionlevel <span class="pl-k">=</span> any (<span class="pl-c1">4</span>,<span class="pl-c1">6</span>)
+    )
+;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>BOARDNAME            ADMINNAME           
+-------------------- --------------------
+Atmg                 Hgkn5               
+rXmhxjUq             efmd09583           
+Vfiem                pyejoy0             
+dmxcjz               ngjrRcgyx           </pre></div>
+<p>Relational algebra:</p>
+<pre><code>ρ BoardName←Board.name, AdminName←AbsUser.name π Board.name, AbsUser.name σ AbsUser.name = Board.rAdmin and AbsUser.name in ρ t1 ( π Admin.iAbsUser σ permissionlevel = 4 or permissionlevel = 6 Admin ) AbsUser ⨯ Board
+</code></pre>
+<h3>
+<a id="user-content-3" class="anchor" href="#3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.</h3>
+<p>Melyek azok a <strong>Post</strong>ok melyek alatt a 2 legfőbb Admin is <strong>Comment</strong>elt (mindekető)?</p>
+<p>What are the ids of the <strong>Post</strong>s, where the 2 Big Bosses are <strong>Comment</strong>ed (both)?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">create</span> <span class="pl-k">view</span> <span class="pl-en">TheBigBosses</span> <span class="pl-k">as</span>
+    <span class="pl-k">select</span> <span class="pl-k">*</span>
+    <span class="pl-k">from</span> 
+    (
+        <span class="pl-k">select</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">iAbsUser</span> <span class="pl-k">as</span> username
+        <span class="pl-k">from</span> Admin
+        <span class="pl-k">order by</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">permissionlevel</span> <span class="pl-k">desc</span>
+    ) 
+    <span class="pl-k">where</span> rownum <span class="pl-k">&lt;=</span><span class="pl-c1">2</span>
+;
+
+<span class="pl-k">create</span> <span class="pl-k">view</span> <span class="pl-en">PnC</span> <span class="pl-k">as</span>
+    <span class="pl-k">select</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span> <span class="pl-k">as</span> pid, <span class="pl-c1">Comment2</span>.<span class="pl-c1">id</span> <span class="pl-k">as</span> cid, <span class="pl-c1">Comment2</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">as</span> username
+    <span class="pl-k">from</span> Post, Comment2
+    <span class="pl-k">where</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">rPost</span> <span class="pl-k">=</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>
+;
+
+<span class="pl-k">select</span> <span class="pl-c1">PnC</span>.<span class="pl-c1">pid</span>
+<span class="pl-k">from</span> PnC, TheBigBosses
+<span class="pl-k">where</span> <span class="pl-c1">PnC</span>.<span class="pl-c1">username</span> <span class="pl-k">=</span> <span class="pl-c1">TheBigBosses</span>.<span class="pl-c1">username</span>
+<span class="pl-k">group by</span> <span class="pl-c1">PnC</span>.<span class="pl-c1">pid</span>
+<span class="pl-k">having</span>  <span class="pl-c1">min</span>(<span class="pl-c1">PnC</span>.<span class="pl-c1">username</span>) <span class="pl-k">=</span> ( <span class="pl-k">select</span> <span class="pl-c1">min</span>(<span class="pl-c1">TheBigBosses</span>.<span class="pl-c1">username</span>) <span class="pl-k">from</span> TheBigBosses )
+    <span class="pl-k">and</span> <span class="pl-c1">max</span>(<span class="pl-c1">PnC</span>.<span class="pl-c1">username</span>) <span class="pl-k">=</span> ( <span class="pl-k">select</span> <span class="pl-c1">max</span>(<span class="pl-c1">TheBigBosses</span>.<span class="pl-c1">username</span>) <span class="pl-k">from</span> TheBigBosses )
+;
+
+<span class="pl-k">drop</span> <span class="pl-k">view</span> TheBigBosses;
+<span class="pl-k">drop</span> <span class="pl-k">view</span> PnC;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>View THEBIGBOSSES created.
+
+View PNC created.
+
+       PID
+----------
+ 453140951
+ 549571820
+ 946073490
+ 964047727
+1352258535
+  56601904
+  40506796
+1267821697
+1216134633
+  64251270
+ 579701661
+ 858015113
+ 380910673
+ 831785068
+1108668441
+
+15 rows selected. 
+
+View THEBIGBOSSES dropped.
+
+View PNC dropped.</pre></div>
+<p>Relational algebra:</p>
+<pre><code>TheBigBosses: σ rownum() &gt; 0 and rownum() ≤ 2 ρ t1 ( τ Admin.permissionlevel desc ρ username←Admin.iAbsUser π Admin.iAbsUser, permissionlevel Admin)
+
+SnC: ρ pid←Post.id, cid←Comment2.id, username←Comment2.rAbsUser π Post.id, Comment2.id, Comment2.rAbsUser σ Comment2.rPost = Post.id Post ⨯ Comment2
+
+
+π username (SnC ÷ TheBigBosses)
+</code></pre>
+<h3>
+<a id="user-content-4" class="anchor" href="#4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.</h3>
+<p>Mennyi az <strong>Admin</strong>ok által készített tartalom összesen <strong>Room</strong>okra, <strong>Post</strong>okra és <strong>Comment</strong>ekre lebontva?</p>
+<p>How many contents made by the staff by <strong>Room</strong>s, <strong>Post</strong>s and <strong>Comment</strong>s?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">create</span> <span class="pl-k">table</span> <span class="pl-en">R_P_C</span> (type <span class="pl-k">varchar2</span>(<span class="pl-c1">20</span>));
+<span class="pl-k">insert into</span> R_P_C <span class="pl-k">values</span> (<span class="pl-s"><span class="pl-pds">'</span>Comments<span class="pl-pds">'</span></span>);
+<span class="pl-k">insert into</span> R_P_C <span class="pl-k">values</span> (<span class="pl-s"><span class="pl-pds">'</span>Posts<span class="pl-pds">'</span></span>);
+<span class="pl-k">insert into</span> R_P_C <span class="pl-k">values</span> (<span class="pl-s"><span class="pl-pds">'</span>Rooms<span class="pl-pds">'</span></span>);
+
+<span class="pl-k">select</span> type, <span class="pl-c1">count</span>(rAbsUser) <span class="pl-k">as</span> num
+<span class="pl-k">from</span> Comment2, Admin, R_P_C
+<span class="pl-k">where</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">=</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">iAbsUser</span>
+    <span class="pl-k">and</span> <span class="pl-c1">R_P_C</span>.<span class="pl-c1">type</span> <span class="pl-k">like</span> <span class="pl-s"><span class="pl-pds">'</span>Comments<span class="pl-pds">'</span></span>
+<span class="pl-k">group by</span> type
+<span class="pl-k">union</span>
+<span class="pl-k">select</span> type, <span class="pl-c1">count</span>(rAbsUser)
+<span class="pl-k">from</span> Post, Admin, R_P_C
+<span class="pl-k">where</span> <span class="pl-c1">Post</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">=</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">iAbsUser</span>
+    <span class="pl-k">and</span> <span class="pl-c1">R_P_C</span>.<span class="pl-c1">type</span> <span class="pl-k">like</span> <span class="pl-s"><span class="pl-pds">'</span>Posts<span class="pl-pds">'</span></span>
+<span class="pl-k">group by</span> type
+<span class="pl-k">union</span>
+<span class="pl-k">select</span> type, <span class="pl-c1">count</span>(rAbsUser)
+<span class="pl-k">from</span> Room, Admin, R_P_C
+<span class="pl-k">where</span> <span class="pl-c1">Room</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">=</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">iAbsUser</span>
+    <span class="pl-k">and</span> <span class="pl-c1">R_P_C</span>.<span class="pl-c1">type</span> <span class="pl-k">like</span> <span class="pl-s"><span class="pl-pds">'</span>Rooms<span class="pl-pds">'</span></span>
+<span class="pl-k">group by</span> type
+;
+
+<span class="pl-k">drop</span> <span class="pl-k">table</span> R_P_C;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>Table R_P_C created.
+1 row inserted.
+1 row inserted.
+1 row inserted.
+
+TYPE                        NUM
+-------------------- ----------
+Comments                    970
+Posts                       196
+Rooms                         7
+
+Table R_P_C dropped.</pre></div>
+<h3>
+<a id="user-content-5" class="anchor" href="#5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5.</h3>
+<p>Az "yyg" egy súlyos káromkodás, elég sokszor elrejtik egy szóban hogy ne tűnjön annyira durvának.
+Melyek azok a <strong>User</strong>ek, akik nem <strong>Admin</strong>ok és "yyg"-vel káromkodtak?</p>
+<p>Who are the <strong>User</strong>s (aren't <strong>Admin</strong>s), used the bad word "yyg"?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">select</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">as</span> Wall_Of_Shame
+<span class="pl-k">from</span> Comment2 
+<span class="pl-k">where</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">message</span> <span class="pl-k">like</span> <span class="pl-s"><span class="pl-pds">'</span>%yyg%<span class="pl-pds">'</span></span>
+<span class="pl-k">union</span>
+<span class="pl-k">select</span> <span class="pl-c1">Post</span>.<span class="pl-c1">rAbsUser</span>
+<span class="pl-k">from</span> Post
+<span class="pl-k">where</span> <span class="pl-c1">Post</span>.<span class="pl-c1">message</span> <span class="pl-k">like</span> <span class="pl-s"><span class="pl-pds">'</span>%yyg%<span class="pl-pds">'</span></span>
+<span class="pl-k">union</span>
+<span class="pl-k">select</span> <span class="pl-c1">Message</span>.<span class="pl-c1">rAbsUser</span>
+<span class="pl-k">from</span> Message
+<span class="pl-k">where</span> <span class="pl-c1">Message</span>.<span class="pl-c1">message</span> <span class="pl-k">like</span> <span class="pl-s"><span class="pl-pds">'</span>%yyg%<span class="pl-pds">'</span></span>
+minus
+<span class="pl-k">select</span> <span class="pl-c1">Admin</span>.<span class="pl-c1">iAbsUser</span> 
+<span class="pl-k">from</span> Admin
+;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>WALL_OF_SHAME       
+--------------------
+Fpkxol2895          
+Hwbin8              
+Vzrmj570            
+Yxfkf               
+dtvmpffnu           
+srpu3082            
+
+6 rows selected.</pre></div>
+<h3>
+<a id="user-content-6" class="anchor" href="#6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6.</h3>
+<p>Mennyit <strong>Post</strong>ot írtak a <strong>UserWall</strong>jára az 5 legrégebbi tagnak?</p>
+<p>How many <strong>Post</strong>s written to the 5 oldest memeber of <strong>Users</strong>?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">select</span> UserName, <span class="pl-c1">count</span>(<span class="pl-c1">Post</span>.<span class="pl-c1">id</span>) <span class="pl-k">as</span> Wall_Posts, (cast(days<span class="pl-k">/</span><span class="pl-c1">365</span> <span class="pl-k">as</span> <span class="pl-k">int</span>)) <span class="pl-k">as</span> Age
+<span class="pl-k">from</span> Post, UserWall,
+(
+    <span class="pl-k">select</span> <span class="pl-k">*</span>
+    <span class="pl-k">from</span>
+    (
+        <span class="pl-k">select</span> <span class="pl-c1">User2</span>.<span class="pl-c1">iAbsUser</span> <span class="pl-k">as</span> UserName, (<span class="pl-k">sysdate</span> <span class="pl-k">-</span> <span class="pl-c1">User2</span>.<span class="pl-c1">regdatetime</span>) <span class="pl-k">as</span> days
+        <span class="pl-k">from</span> User2
+        <span class="pl-k">order by</span> days <span class="pl-k">desc</span>
+    )
+    <span class="pl-k">where</span> rownum <span class="pl-k">&lt;=</span> <span class="pl-c1">5</span>
+)
+<span class="pl-k">where</span> <span class="pl-c1">Post</span>.<span class="pl-c1">rUserWall</span> <span class="pl-k">=</span> <span class="pl-c1">UserWall</span>.<span class="pl-c1">rUser</span>
+    <span class="pl-k">and</span>  <span class="pl-c1">UserWall</span>.<span class="pl-c1">rUser</span> <span class="pl-k">=</span> UserName
+<span class="pl-k">group by</span> UserName, days
+<span class="pl-k">order by</span> days <span class="pl-k">desc</span> 
+;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>USERNAME             WALL_POSTS        AGE
+-------------------- ---------- ----------
+vvCpo43                      14         18
+netifqqbF                    11         18
+kpml8                        12         18
+Fpkxol2895                    2         17
+XrOsfsf690                   19         17</pre></div>
+<h3>
+<a id="user-content-7" class="anchor" href="#7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7.</h3>
+<p>Kik azok akik benne vannak a top 20 legtöbbet <strong>Comment</strong>elők és a top 20 legtöbb <strong>Message</strong>t küldőkben is?</p>
+<p>Who are the <strong>AbsUsers</strong>, are in the top 20 most posted <strong>Comment</strong>s and in the top 20 most sent <strong>Message</strong>s group?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">select</span> <span class="pl-k">*</span>
+<span class="pl-k">from</span> 
+( 
+    <span class="pl-k">select</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">from</span> AbsUser, Comment2 
+    <span class="pl-k">where</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">=</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">group by</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">order by</span> <span class="pl-c1">count</span>(<span class="pl-c1">Comment2</span>.<span class="pl-c1">id</span>) <span class="pl-k">desc</span>
+)
+<span class="pl-k">where</span> rownum <span class="pl-k">&lt;=</span><span class="pl-c1">20</span>
+intersect
+<span class="pl-k">select</span> <span class="pl-k">*</span>
+<span class="pl-k">from</span> 
+( 
+    <span class="pl-k">select</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">from</span> AbsUser, Message 
+    <span class="pl-k">where</span> <span class="pl-c1">Message</span>.<span class="pl-c1">rAbsUser</span> <span class="pl-k">=</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">group by</span> <span class="pl-c1">AbsUser</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">order by</span> <span class="pl-c1">count</span>(<span class="pl-c1">Message</span>.<span class="pl-c1">id</span>) <span class="pl-k">desc</span>
+)
+<span class="pl-k">where</span> rownum <span class="pl-k">&lt;=</span><span class="pl-c1">20</span>
+;</pre></div>
+<p>Output:</p>
+<div class="highlight highlight-source-shell"><pre>NAME                
+--------------------
+Hgkn5               
+Woccvjdcv           
+pjmDhaqrg           </pre></div>
+<h2>
+<a id="user-content-view" class="anchor" href="#view" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>View</h2>
+<p>Melyik <strong>Board</strong>okat használják legtöbbet, a <strong>Room</strong>ok (x5) és <strong>Post</strong>ok (x2) és <strong>Comment</strong>ek (x1) száma alapján?</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">drop</span> <span class="pl-k">view</span> TopPosts;
+<span class="pl-k">drop</span> <span class="pl-k">view</span> TopRooms;
+<span class="pl-k">drop</span> <span class="pl-k">view</span> TopBoards;
+
+<span class="pl-k">create</span> <span class="pl-k">view</span> <span class="pl-en">TopPosts</span> <span class="pl-k">as</span>
+    <span class="pl-k">select</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>, <span class="pl-c1">count</span>(<span class="pl-c1">Comment2</span>.<span class="pl-c1">id</span>) <span class="pl-k">as</span> num
+    <span class="pl-k">from</span> Post, Comment2 
+    <span class="pl-k">where</span> <span class="pl-c1">Comment2</span>.<span class="pl-c1">rPost</span> <span class="pl-k">=</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>
+    <span class="pl-k">group by</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span>
+    <span class="pl-k">order by</span> num <span class="pl-k">desc</span>
+;
+
+<span class="pl-k">create</span> <span class="pl-k">view</span> <span class="pl-en">TopRooms</span> <span class="pl-k">as</span>
+    <span class="pl-k">select</span> <span class="pl-c1">Room</span>.<span class="pl-c1">name</span>, <span class="pl-c1">count</span>(<span class="pl-c1">Post</span>.<span class="pl-c1">id</span>) <span class="pl-k">as</span> num
+    <span class="pl-k">from</span> Room, Post
+    <span class="pl-k">where</span> <span class="pl-c1">Post</span>.<span class="pl-c1">rRoom</span> <span class="pl-k">=</span> <span class="pl-c1">Room</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">group by</span> <span class="pl-c1">Room</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">order by</span> num <span class="pl-k">desc</span>
+;
+
+<span class="pl-k">create</span> <span class="pl-k">view</span> <span class="pl-en">TopBoards</span> <span class="pl-k">as</span>
+    <span class="pl-k">select</span> <span class="pl-c1">Board</span>.<span class="pl-c1">name</span>, (<span class="pl-c1">count</span>(<span class="pl-c1">Room</span>.<span class="pl-c1">name</span>)<span class="pl-k">*</span><span class="pl-c1">5</span><span class="pl-k">+</span><span class="pl-c1">count</span>(<span class="pl-c1">TopRooms</span>.<span class="pl-c1">name</span>)<span class="pl-k">*</span><span class="pl-c1">2</span><span class="pl-k">+</span><span class="pl-c1">count</span>(<span class="pl-c1">TopPosts</span>.<span class="pl-c1">id</span>)) <span class="pl-k">as</span> num
+    <span class="pl-k">from</span> Board, Room, Post, TopPosts, TopRooms
+    <span class="pl-k">where</span> <span class="pl-c1">Post</span>.<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-c1">TopPosts</span>.<span class="pl-c1">id</span> <span class="pl-k">and</span> <span class="pl-c1">Room</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> <span class="pl-c1">TopRooms</span>.<span class="pl-c1">name</span> <span class="pl-k">and</span> <span class="pl-c1">Room</span>.<span class="pl-c1">rBoard</span> <span class="pl-k">=</span> <span class="pl-c1">Board</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">group by</span> <span class="pl-c1">Board</span>.<span class="pl-c1">name</span>
+    <span class="pl-k">order by</span> num <span class="pl-k">desc</span>
+;
+
+<span class="pl-k">select</span> <span class="pl-k">*</span> <span class="pl-k">from</span> TopBoards;</pre></div>
+<h2>
+<a id="user-content-normal-forms" class="anchor" href="#normal-forms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Normal forms</h2>
+<p>The database should be normalized to avoid anomalies. Below I summarize the main normal forms. I will check my tables and decide in which normal form they are.</p>
+<h3>
+<a id="user-content-first-normal-form-1nf" class="anchor" href="#first-normal-form-1nf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First Normal Form (<strong>1NF</strong>)</h3>
+<p>In <strong>First Normal Form</strong>, any row must not have a column in which more than one value is saved, like separated with commas. Rather than that, we must separate such data into multiple rows.</p>
+<h3>
+<a id="user-content-second-normal-form-2nf" class="anchor" href="#second-normal-form-2nf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Second Normal Form (<strong>2NF</strong>)</h3>
+<p>A database is in <strong>2NF</strong> if it is in <strong>First Normal Form</strong> and all non-key attributes are fully functional dependent on any candidate key.</p>
+<h3>
+<a id="user-content-boyce-codd-normal-form-bcnf" class="anchor" href="#boyce-codd-normal-form-bcnf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Boyce-Codd Normal Form (<strong>BCNF</strong>)</h3>
+<p>A database is in <strong>Boyce-Codd Normal Form</strong> if it is in <strong>2NF</strong> and there is no transitive functional dependency and attributes depend only on any super key.
+<strong>BCNF</strong> is one of the most important normal form, because there is always a lossless decomposition in <strong>BCNF</strong>.</p>
+<h2>
+<a id="user-content-normalization" class="anchor" href="#normalization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Normalization</h2>
+<p>I will check the normal forms of all the tables. First, I write down the Functional Dependencies on the given table. After it, I can define in what normal form is the table.</p>
+<p><strong>AbsUser</strong>(<code>name</code>, pw)</p>
+<p>F[<strong>AbsUser</strong>] {name-&gt;pw}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Admin</strong>(<code>iAbsUser</code>, permissionlvl)</p>
+<p>F[<strong>Admin</strong>] = {iAbsUser-&gt;permissionlvl}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Log</strong>(<code>timestm</code>,message)</p>
+<p>F[<strong>Log</strong>] = {timestm-&gt;message}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>User2</strong>(<code>iAbsUser</code>, regdate, regtime)</p>
+<p>F[<strong>User2</strong>] = {iAbsUser-&gt;regdate, iAbsUser-&gt;regtime}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>UserWall</strong>(<code>rUser</code>)</p>
+<p>F[<strong>UserWall</strong>] = {}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Board</strong>(<code>name</code>, permissionlvl, rAdmin)</p>
+<p>F[<strong>Board</strong>] = {name-&gt;permissionlvl, name-&gt;rAdmin}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Room</strong>(<code>name</code>, islocked, date, time, rBoard, rAdmin)</p>
+<p>F[<strong>Room</strong>] = {name-&gt;islocked, name-&gt;date, name-&gt;time, name-&gt;rBoard, name-&gt;rAdmin}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Post</strong>(<code>id</code>, message, date, time, rRoom, rUserWall, rAbsUser)</p>
+<p>F[<strong>Post</strong>] = {id-&gt;message, id-&gt;date, id-&gt;time, id-&gt;rRoom, id-&gt;rUserWall, id-&gt;rAbsUser}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Comment2</strong>(<code>id</code>, message, date, time, rPost, rAbsUser)</p>
+<p>F[<strong>Comment2</strong>] = {id-&gt;message, id-&gt;date, id-&gt;time, id-&gt;rPost, id-&gt;rAbsUser}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>ChatRoom</strong>(<code>id</code>)</p>
+<p>F[<strong>Chatroom</strong>] = {}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>ChatRoom_AbsUser</strong>(<code>rChatRoom</code>,<code>rAbsUser</code>)</p>
+<p>F[<strong>ChatRoom_AbsUser</strong>] = {}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<p><strong>Message</strong>(<code>id</code>, message, date, time, rChatroom, rAbsUser)</p>
+<p>F[<strong>Message</strong>] = {id-&gt;message, id-&gt;date, id-&gt;time, id-&gt;rChatroom, id-&gt;rAbsUser}</p>
+<div class="highlight highlight-source-shell"><pre>1NF     <span class="pl-c1">true</span>
+2NF     <span class="pl-c1">true</span>
+BCNF    <span class="pl-c1">true</span></pre></div>
+<hr>
+<h3>
+<a id="user-content-trigger" class="anchor" href="#trigger" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trigger</h3>
+<p>I create a logging trigger, so when I <strong>insert</strong>, <strong>update</strong>, or <strong>delete</strong> a row in the given table, the trigger will add a new row into my <strong>Log</strong> table.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">drop</span> <span class="pl-k">table</span> Log CASCADE CONSTRAINTS;
+
+<span class="pl-k">create</span> <span class="pl-k">table</span> <span class="pl-en">Log</span> (
+    timestm <span class="pl-k">timestamp</span>,
+    message <span class="pl-k">varchar2</span>(<span class="pl-c1">255</span>),
+    rBoard <span class="pl-k">varchar2</span>(<span class="pl-c1">20</span>),
+    <span class="pl-k">foreign key</span>(rBoard) <span class="pl-k">references</span> Board(name),
+    <span class="pl-k">primary key</span> (timestm)
+);
+
+<span class="pl-k">create or replace</span> <span class="pl-k">trigger</span> <span class="pl-en">log_event</span>
+    after
+        insert <span class="pl-k">or</span>
+        <span class="pl-k">update</span> <span class="pl-k">or</span>
+        <span class="pl-k">delete</span>
+    <span class="pl-k">on</span> Board
+    for each row
+<span class="pl-k">begin</span>
+    case
+        when INSERTING then
+            <span class="pl-k">insert into</span> Log <span class="pl-k">values</span>
+                (
+                    systimestamp,
+                    <span class="pl-s"><span class="pl-pds">'</span>INSERT<span class="pl-pds">'</span></span>,
+                    :<span class="pl-c1">NEW</span>.<span class="pl-c1">name</span>
+                );
+        when UPDATING then
+            <span class="pl-k">insert into</span> Log <span class="pl-k">values</span>
+                (
+                    systimestamp,
+                    <span class="pl-s"><span class="pl-pds">'</span>UPDATE<span class="pl-pds">'</span></span>,
+                    :<span class="pl-c1">NEW</span>.<span class="pl-c1">name</span>
+                );
+        when DELETING then
+            <span class="pl-k">insert into</span> Log <span class="pl-k">values</span>
+                (
+                    systimestamp,
+                    <span class="pl-s"><span class="pl-pds">'</span>DELETE<span class="pl-pds">'</span></span>,
+                    :<span class="pl-c1">OLD</span>.<span class="pl-c1">name</span>
+                );
+    end case;
+end;</pre></div>
+</article></body></html>

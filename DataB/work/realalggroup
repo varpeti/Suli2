@@ -1,0 +1,39 @@
+-- this is an example
+
+group: nameOfTheNewGroup 
+
+
+Admin = {
+    iAbsUser:string, permissionlevel:number
+    n1, 1
+    n2, 2
+    n3, 3
+}
+
+AbsUser = {
+    name:string
+    n1
+  n2
+    n3
+}
+
+Board = {
+    rAdmin:string, name:string
+    n1, b1
+    n2, b2
+    n3, b3
+}
+
+Post = {
+    id:number
+    1
+    2
+    3
+}
+
+Comment2 = {
+    id:number, rAbsUser:string, rPost:number
+    1, n1, 1
+    2, n2, 2
+    3, n3, 3
+}

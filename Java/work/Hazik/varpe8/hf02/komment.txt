@@ -1,0 +1,14 @@
+Nem jo otlet megallni egy nem interaktiv program vegen, megneheziti a futtato
+scriptek dolgat. En viszont, mint user, vagyok eleg kompetens, hogy ne zarjam be
+a terminalt, ha el szeretnem olvasni a konzolos kimenetet.
+`Component.flip` miert nem statikus?
+Sok kis szoveg konkatenaciora erdemesebb a `StringBuilder`-t hasznalni,
+gyorsabb.
+Teglalapnal csak a bal-felso sarkot tukrozod.
+Egy nagyobb kepnel azert ez eleg sok logolas, biztos minden elemre ki kell irni
+az osszes transzformaciot?
+Nem rossz otlet a kulon tombben tarolt regexek hasznalata, viszont igy nem
+lathato at konnyen, hogy melyik regexre mit csinal a program.
+A teglalap eseten a `getWidth()` a magassagot adja vissza.
+A torottvonalnal a `flip` erteket nem adod ertekul.
+Egyebkent jo.

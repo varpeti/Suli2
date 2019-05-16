@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#$1 = '$file_name'
+#$2 = '$file_base_name'
+
+##################A projekt paraméterei:################
+fordito="javac"
+projectfileok="*.java"
+parameterek="-d ."
+futtato="java"
+nev="stat/Statisztika"
+futtatas=true
+########################################################
+
+
+
+################Fordítás és futtatás:###################
+
+$fordito $parameterek $projectfileok
+
+if [[ "$futtatas" = true ]]; then
+	$futtato $nev
+fi
+########################################################

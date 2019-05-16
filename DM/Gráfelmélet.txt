@@ -1,0 +1,152 @@
+Tétel.	(Handshaking-kézfogási tétel) Minden gráfban a fokszámok összege az élek számának kétszeresével egyenlõ.
+
+Bizonyítás.	Tegyük fel, hogy az e él az u és v szögpontokhoz illeszkedik, azaz u és v 
+		az e él két végpontja.
+		Ekkor, ha , akkor az e élt -nál és -nél is beszámoltuk.
+		Ha pedig , akkor az e él hurokél, és így -nál számoltuk kétszer.
+		Tehát a gráf összes szögpontjainak a fokszámát összeadva éppen az élek számának 
+		kétszeresét kapjuk.
+
+	A tétel nyilvánvaló következménye, hogy minden gráfban a fokszámok összege páros szám.
+
+Definíció.	Egy gráfot egyszerûnek nevezünk, ha sem hurokélt, sem pedig többszörös élt 
+		nem tartalmaz.
+
+
+Tétel. Minden 1-nél több csúcsú egyszerű gráfban van két azonos fokú csúcs.
+Bizonyítás. 
+Ha a gráfnak n csúcsa van, a lehetséges fokszámok: 0, 1, 2, 3, …, n-1. Azonban a 0 éa az n-1 fokszám egy adott gráfban egyszerre nem fordulhat elő, hiszen ha  van 0 fokszámú pont, akkor az  izolált, ezért ehhez nem illeszkedhet rá  más csúcsból él, nem lehet tehát más csúcsnak n-1 a fokszáma.  Tehát az n-1  db lehetséges fokszámot n csúcsra kell elosztani, így szükségképpen lesz két csúcs, amelyeknek azonos a fokszáma. (skatulya elv)
+
+
+Definíció.	Egy gráfot teljes gráfnak nevezünk, ha bármely két pontját pontosan egy él 
+		köti össze.
+
+
+Tétel.	Az n szögpontú teljes gráf éleinek száma: (n*(n-1))/2
+
+Bizonyítás.	A teljes n-gráf bármely két pontját pontosan egy él köti össze, így minden 
+		egyes szögpont fokszáma n - 1, tehát a fokszámok összege n*(n-1). Tudjuk, hogy 
+		bármely gráf esetén a fokszámok összege az élek számának kétszerese, amibõl az 
+		állítás adódik.
+
+Definíció.	Élsorozatnak az élek olyan rendezett halmazát nevezzük, amely a következõ 
+		tulajdonságokkal rendelkezik:
+
+		-	a sorozat elsõ és utolsó élétõl eltekintve bármely él egyik végpontja az elõzõ 
+			élhez, másik végpontja a következõ élhez illeszkedik,
+
+		-	az elsõ él egyik végpontja a következõ élhez illeszkedik, másik végpontja az 
+			élsorozat kezdõpntja,
+
+		-	az utolsó él egyik végpontja az elõzõ élhez illeszkedik, másik végpontja az 
+			élsorozat végpontja,
+
+		-	minden él pontosan egyszer fordul elõ.
+
+
+Definíció.	Nyílt élsorozatról beszélünk, ha az élsorozat kezdõpontja és végpontja 
+		különbözõ. Ellenkezõ esetben zárt élsorozatról van szó.
+
+
+Definíció.	Egy élsorozathoz tartozó gráf az a gráf, amelyet az élsorozat élei alkotnak.
+
+
+Definíció.	Az u és v szögpontok közötti út olyan nyílt élsorozat éleinek halmaza, amely 
+		a következõ tulajdonságokkal rendelkezik:
+			-	u és v kezdõ és végpontok,
+			-	ezek foka 1, míg az összes többi foka 2.
+
+
+Definíció.	Ha egy gráfban bármely két pont úttal elérhetõ, akkor a gráfot összefüggõnek 
+		nevezzük.
+
+
+Definíció.	Az olyan összefüggõ gráfokat, melyekben minden pont foka 2, körnek 
+		nevezzük.
+
+
+A definícióból nyilvánvaló, hogy egy zárt élsorozat élei kört alkotnak, ha minden pont foka 2.
+
+
+Definíció.	Út, ill. kör hosszán a benne lévõ élek számát értjük.
+
+
+Tétel.	Az n szögpontú összefüggõ gráfnak legalább n - 1 éle van.
+Bizonyítás.	A bizonyítás teljes indukcióval történik.
+
+		Az állítás n = 1 esetén nyilvánvalóan igaz.
+		Tegyük fel, hogy valamely n>1 esetén minden n szögpontú gráfnbak van 
+		n - 1 éle.
+		Belátjuk, hogy akkor minden n + 1-pontú összefüggõ gráfnak van n éle.
+		Legyen G egy n + 1 szögpontú összefüggõ gráf.
+		Ha G-nek kevesebb éle van, mint n + 1, akkor van elsõfokú pontja. Ugyanis mivel 
+		G összefüggõ, így izolált pontja nincs. Ha nem lenne elsõfokú pontja sem, akkor 
+		minden pont foka legalább 2 lenne, és így a fokszámok összege minimum 
+          2(n+1) > n.
+
+		Vegyük G egy elsõfokú pontját és a hozzátartozó éllel együtt töröljük a gráfból. 
+		Nyilván n szögpontú összefüggõ gráfot kapunk, melyre érvényes az indukciós 
+		feltétel, azaz minimum n - 1 éle van. A törölt élt hozzávéve adódik, hogy G-nek 
+		minimum n éle van.
+
+Tétel.	Ha egy gráfban minden pont foka legalább 2, akkor a gráfban van 
+				kör.
+
+		Bizonyítás.	Alkalmazzuk az un. leghosszabb út módszerét! Legyen az 1 
+				hosszúságú L út a G gráf egy leghosszabb útja, és ennek egy végpontja v. 
+				Tekintsük most G-nek v-hez illeszkedõ éleit! Ezek közül bármelyiknek a 
+				végpontja L-hez tartozik, ugyanis ellenkezõ esetben L hossza 1-nél nagyobb 
+				lenne, ami ellentmond annak, hogy L a leghosszabb út.
+
+
+		Ha G minden pontjának foka legalább 2, akkor illeszkedik v-hez egy e él is. Ha e 
+		hurokél, akkor ez G egy körét kijelöli. Ha e nem hurokél, akkor u-nak v-tõl 
+		különbözõ w végpontja L-ben van, tehát L-nek a v és w pontokat összekötõ része 
+		e-vel együtt G egy körét alkotja.
+
+Tétel.	Ha egy n pontú gráfnak legalább n éle van, akkor van benne kör.
+
+Bizonyítás.	A bizonyítást n-re vonatkozó teljes indukcióval végezzük.
+		Az állítás n = 1 esetén nyilvánvalóan igaz.
+		Tegyük fel, hogy valamely n>1-re minden n pontú és legalább n élû gráfban 
+		van kör.
+		Legyen G egy n + 1 pontú gráf, amelynek legalább n + 1 éle van.
+Ha van elsőfokú éle, töröljük a rá illeszkedő éllel együtt. A maradék gráfban az indukciós feltétel szerint van kör. Visszavéve az elsőfokő pontot és a rá illeszkedő élet, az előző kört uu.  tartalmazza a kapott gráf. 
+
+Ha nincs elsőfokú pontja, akkor minden pont legalább másodfokú.  Ekkor a az előző tétel szertint van a gráfban kör.  		
+
+Tétel.	Az n szögpontú fagráf éleinek száma n - 1.
+
+Bizonyítás.	Tudjuk, hogy minden n szögpontú összefüggõ gráfnak legalább n - 1 éle 
+		van. Az elõzõ tétel szerint, ha egy n pontú gráfnak legalább n éle van, akkor a 
+		gráfban van kör. Eszerint minden n pontú körmentes összefüggõ gráfnak pontosan 
+		n - 1 éle van, ami az állítást igazolja.
+
+Definíció.	Ha egy gráf összefüggõ és nem tartalmaz kört, akkor fagráfnak vagy röviden 
+		fának nevezzük.
+
+
+Tétel.	Az n szögpontú és n - 1 élû összefüggõ gráfok fák.
+
+Bizonyítás.	Tegyük fel ugyanis, hogy a G gráf nem fa, azaz tartalmaz kört. Ha a kör 
+		egy élét töröljük, akkor n szögpontú, n - 2 élû összefüggõ gráfot kapunk, ami 
+		ellentmond annak, hogy egy n szögpontú összefüggõ gráfnak legalább n - 1 éle 
+		van.
+		Be kell még látnunk, hogy ha egy összefüggõ gráf valamely körének egy 
+		tetszõleges élét töröljük, akkor ismét összefüggõ gráfot kapunk.
+		Tegyük fel ehhez, hogy a törölt él nem hurokél, hiszen hurokél törlése nem szünteti 
+		meg az összefüggõséget. Töröljük a G gráf K körének (u,v) élét. A G gráfban az 
+		u-ból a v-be most is el tudunk jutni a K kör megmaradt élein keresztül, azaz az 
+		(u,v) törlése után is eljuthatunk bármelyik pontból bármelyik pontba, tehát a 
+		kapott gráf is összefüggõ.
+		
+
+Az elõzõek alapján a fák a következõ négy tulajdonsággal rendelkeznek:
+	
+Fa definíciói:
+
+Tétel: egy összefggő gráf akkor és csak akkor fa, ha bármely két pontja között pontosan egyy út van.
+
+Tétel: a fa összefüggő körmentes gráf
+
+Tétel: az n pontú, n-1 élú összefüggő gráf fa.

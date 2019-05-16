@@ -1,0 +1,82 @@
+% SECTION: TÁBLÁZATOK    
+\section{Táblázatok használata}\label{sec:tablazatok}    
+
+	\begin{table}[!h]
+		\begin{center}
+        	\begin{tabular}{|l|ccc|}
+            \hline
+        	Számrendszer  &  Alap &	Jele      & Példa \\
+            \hline
+			Decimális 	  &  10   &	          & 139  \\
+			Bináris 	  &  2 	  & b 	      & 100b \\
+			Oktális 	  &  8    & 0 	      & 065 \\
+			Hexadecimális &  16   &	0x vagy h & 0x243, 22h\\
+            $\pi$-alapú   &  $\pi$ & $\cdots$ & $\cdots$ \\
+            \hline
+        	\end{tabular}		
+		\end{center}
+        \label{tab:szamrendszerek}
+        \caption[Első táblázat]{A félév elején tanult számrendszerek\dots}
+	\end{table}
+    
+    A babel csomag használatával névelővel is elláthatjuk
+    a referenciákat.
+    Az utolsó sornál nem kell sortörést jelezni, 
+    csak ha vonalat húzunk utána\dots.
+    
+    Megjegyzés: a táblázat annál szebb, minél kevesebb a vonal
+    és ha függőleges nincs, vagy alig észrevehető.
+    
+    Megjegyzés2: további csomagok segítségével tudunk
+    szaggatott vonalat és egyéb vastagságú vonalakat használni.
+    
+    \subsection{Oszlopok összehúzása}
+    	\begin{table}[!h]
+		\begin{center}
+        	\begin{tabular}{|lccc|}
+            \hline
+            \multicolumn{4}{|c|}{Közös oszlop}\\
+            \hline
+        	Számrendszer  &  Alap &	Jele      & Példa \\
+            \hline
+			Decimális 	  &  10   &	          & 139  \\
+			Bináris 	  &  2 	  & b 	      & 100b \\
+			Oktális 	  &  8    & 0 	      & 065 \\
+			Hexadecimális &  16   &	0x vagy h & 0x243, 22h\\
+            $\pi$-alapú   &  $\pi$ & $\cdots$ & $\cdots$ \\
+            \hline
+        	\end{tabular}		
+		\end{center}
+	\end{table}
+    
+\section{Elágazások}
+
+ \begin{equation}	
+ f(n) =
+  \begin{cases}
+    n/2       & \quad \text{ha } n \text{ páros}\\
+    -(n+1)/2  & \quad \text{ha } n \text{ páratlan}\\
+  \end{cases}
+  \end{equation}
+  
+% SECTION: EGYÉB  
+\section{Egyéb tudnivalók} 
+
+	Órai munka: keressetek rá a neten, hogy lehet algoritmust
+    közölni latex-ben.
+	\footnote{Lábjegyzetet írunk}
+    
+
+\section{Idézés}
+
+	Minden tudományos munkában a felhasznált irodalmat idézzünk.
+    Soha nem használunk fel irodalmat anélkül, hogy idéznénk.
+    Soha.
+    Itt egy idézet \cite{nika2016strong}. Ennyi.
+    
+    Megtudtam, hogy lehet a magyar babel csomagot használni:
+    recompile from scratch.
+    
+    
+\bibliographystyle{plain}
+\bibliography{bibliography.bib}

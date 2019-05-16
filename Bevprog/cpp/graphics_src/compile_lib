@@ -1,0 +1,5 @@
+#!/bin/bash
+g++ -c graphics.cpp -g -O3 -lSDL -lSDL_ttf
+ar rcs libgraphics.a graphics.o 
+rm graphics.o
+mv libgraphics.a ..

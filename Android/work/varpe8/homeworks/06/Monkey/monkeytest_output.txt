@@ -1,0 +1,636 @@
+  bash arg: -p
+  bash arg: ml.varpeti.hf06
+  bash arg: --pct-touch
+  bash arg: 50
+  bash arg: --pct-motion
+  bash arg: 5
+  bash arg: --pct-trackball
+  bash arg: 5
+  bash arg: --pct-syskeys
+  bash arg: 5
+  bash arg: --pct-nav
+  bash arg: 5
+  bash arg: --pct-majornav
+  bash arg: 5
+  bash arg: --pct-appswitch
+  bash arg: 5
+  bash arg: --pct-flip
+  bash arg: 5
+  bash arg: --pct-anyevent
+  bash arg: 5
+  bash arg: --pct-pinchzoom
+  bash arg: 5
+  bash arg: --pct-rotation
+  bash arg: 5
+  bash arg: --throttle
+  bash arg: 50
+  bash arg: -v
+  bash arg: 999
+:Monkey: seed=1553588066826 count=999
+:AllowPackage: ml.varpeti.hf06
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 50.0%
+//   1: 5.0%
+//   2: 5.0%
+//   3: 5.0%
+//   4: 5.0%
+//   5: -0.0%
+//   6: 5.0%
+//   7: 5.0%
+//   8: 5.0%
+//   9: 5.0%
+//   10: 5.0%
+//   11: 5.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(595.0,415.0)
+:Sending Touch (ACTION_UP): 0:(598.66486,407.33545)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(855.0,1871.0)
+:Sending Touch (ACTION_UP): 0:(862.53217,1866.0797)
+:Sending rotation degree=2, persist=false
+:Sending Touch (ACTION_DOWN): 0:(979.0,1482.0)
+:Sending Touch (ACTION_UP): 0:(980.8591,1477.4735)
+:Sending Touch (ACTION_DOWN): 0:(884.0,2124.0)
+:Sending Touch (ACTION_UP): 0:(900.09064,2115.8113)
+:Sending Touch (ACTION_DOWN): 0:(385.0,1307.0)
+:Sending Touch (ACTION_UP): 0:(388.11832,1298.7832)
+:Sending Touch (ACTION_DOWN): 0:(593.0,1456.0)
+:Sending Touch (ACTION_UP): 0:(590.181,1458.1815)
+:Sending Touch (ACTION_DOWN): 0:(315.0,1522.0)
+:Sending Touch (ACTION_UP): 0:(309.5493,1524.1171)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(433.0,1710.0)
+:Sending Touch (ACTION_UP): 0:(520.6664,1834.147)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(918.0,973.0)
+:Sending Touch (ACTION_UP): 0:(924.55005,978.87854)
+:Sending Touch (ACTION_DOWN): 0:(747.0,1784.0)
+:Sending Touch (ACTION_UP): 0:(746.0267,1778.7323)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(857.0,257.0)
+:Sending Touch (ACTION_UP): 0:(848.7028,262.6063)
+:Sending Touch (ACTION_DOWN): 0:(820.0,123.0)
+:Sending Touch (ACTION_UP): 0:(814.854,120.507256)
+:Sending Touch (ACTION_DOWN): 0:(224.0,1294.0)
+:Sending Touch (ACTION_UP): 0:(219.63553,1286.8634)
+:Sending Touch (ACTION_DOWN): 0:(811.0,782.0)
+:Sending Touch (ACTION_UP): 0:(825.46356,768.699)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(415.0,1855.0)
+:Sending Touch (ACTION_UP): 0:(420.01492,1853.6486)
+:Sending Touch (ACTION_DOWN): 0:(355.0,1894.0)
+:Sending Touch (ACTION_UP): 0:(285.38574,1950.4148)
+:Sending Touch (ACTION_DOWN): 0:(1000.0,1345.0)
+:Sending Touch (ACTION_UP): 0:(996.929,1342.9886)
+:Sending Touch (ACTION_DOWN): 0:(660.0,1237.0)
+:Sending Touch (ACTION_UP): 0:(752.51263,1293.6478)
+:Sending Touch (ACTION_DOWN): 0:(833.0,1968.0)
+:Sending Touch (ACTION_UP): 0:(833.2024,1975.1984)
+:Sending Touch (ACTION_DOWN): 0:(405.0,42.0)
+:Sending Touch (ACTION_UP): 0:(403.9917,43.644447)
+    //[calendar_time:2019-03-24 20:12:10.281  system_uptime:3270291294]
+    // Sending event #100
+    //[calendar_time:2019-03-24 20:12:10.332  system_uptime:3270291345]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(221.0,1088.0)
+:Sending Touch (ACTION_UP): 0:(221.76956,1084.4706)
+:Sending Touch (ACTION_DOWN): 0:(683.0,1205.0)
+:Sending Touch (ACTION_UP): 0:(694.04175,1208.9688)
+:Sending Touch (ACTION_DOWN): 0:(70.0,235.0)
+:Sending Touch (ACTION_UP): 0:(71.25246,242.88968)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(858.0,104.0)
+:Sending Touch (ACTION_UP): 0:(831.7991,93.17804)
+    // Rejecting start of Intent { cmp=com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity } in package com.samsung.android.app.galaxyfinder
+:Sending Touch (ACTION_DOWN): 0:(915.0,383.0)
+:Sending Touch (ACTION_UP): 0:(914.3928,376.09763)
+:Sending Touch (ACTION_DOWN): 0:(165.0,685.0)
+:Sending Touch (ACTION_UP): 0:(174.0126,684.56946)
+:Sending Touch (ACTION_DOWN): 0:(58.0,2153.0)
+:Sending Touch (ACTION_UP): 0:(64.43005,2155.586)
+:Sending Touch (ACTION_DOWN): 0:(580.0,1699.0)
+:Sending Touch (ACTION_UP): 0:(563.2558,1708.3976)
+:Sending Touch (ACTION_DOWN): 0:(184.0,176.0)
+:Sending Touch (ACTION_UP): 0:(186.87868,179.7296)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(868.0,1112.0)
+:Sending Touch (ACTION_UP): 0:(869.4679,1104.5754)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=net.dinglisch.android.taskerm/.Tasker } in package net.dinglisch.android.taskerm
+:Sending Touch (ACTION_DOWN): 0:(608.0,1828.0)
+:Sending Touch (ACTION_UP): 0:(596.5433,1830.4337)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.sec.android.app.launcher/.activities.LauncherActivity } in package com.sec.android.app.launcher
+:Sending Touch (ACTION_DOWN): 0:(659.0,690.0)
+:Sending Touch (ACTION_UP): 0:(673.35944,685.32635)
+:Sending Touch (ACTION_DOWN): 0:(250.0,396.0)
+:Sending Touch (ACTION_UP): 0:(257.41855,396.43292)
+:Sending Touch (ACTION_DOWN): 0:(864.0,456.0)
+:Sending Touch (ACTION_UP): 0:(829.7933,466.4164)
+:Sending rotation degree=2, persist=true
+:Sending Touch (ACTION_DOWN): 0:(815.0,651.0)
+:Sending Touch (ACTION_UP): 0:(826.3314,649.01764)
+:Sending Touch (ACTION_DOWN): 0:(1042.0,659.0)
+:Sending Touch (ACTION_UP): 0:(1045.6099,637.579)
+:Sending Touch (ACTION_DOWN): 0:(772.0,617.0)
+:Sending Touch (ACTION_UP): 0:(768.8479,617.1253)
+:Sending Touch (ACTION_DOWN): 0:(952.0,978.0)
+:Sending Touch (ACTION_UP): 0:(947.68585,977.7617)
+:Sending Touch (ACTION_DOWN): 0:(678.0,351.0)
+:Sending Touch (ACTION_UP): 0:(677.2033,351.14175)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.sec.android.app.clockpackage/.ClockPackage } in package com.sec.android.app.clockpackage
+:Sending Touch (ACTION_DOWN): 0:(327.0,1411.0)
+:Sending Touch (ACTION_UP): 0:(327.20435,1417.3689)
+:Sending Touch (ACTION_DOWN): 0:(1010.0,1377.0)
+:Sending Touch (ACTION_UP): 0:(999.3637,1356.4073)
+    // Rejecting start of Intent { act=android.search.action.GLOBAL_SEARCH cmp=com.google.android.googlequicksearchbox/.SearchActivity } in package com.google.android.googlequicksearchbox
+:Sending Touch (ACTION_DOWN): 0:(1040.0,2187.0)
+:Sending Touch (ACTION_UP): 0:(1049.559,2185.771)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(831.0,1606.0)
+:Sending Touch (ACTION_UP): 0:(831.7268,1615.799)
+:Sending Touch (ACTION_DOWN): 0:(588.0,1368.0)
+:Sending Touch (ACTION_UP): 0:(602.79736,1363.4016)
+:Sending Touch (ACTION_DOWN): 0:(249.0,954.0)
+:Sending Touch (ACTION_UP): 0:(249.22147,932.92615)
+:Sending Touch (ACTION_DOWN): 0:(110.0,733.0)
+:Sending Touch (ACTION_UP): 0:(114.419785,723.7808)
+:Sending Touch (ACTION_DOWN): 0:(905.0,994.0)
+    //[calendar_time:2019-03-24 20:12:13.050  system_uptime:3270294063]
+    // Sending event #200
+:Sending Touch (ACTION_UP): 0:(913.6541,991.6112)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(887.0,1214.0)
+:Sending Touch (ACTION_UP): 0:(846.5741,1060.1183)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(679.0,125.0)
+:Sending Touch (ACTION_UP): 0:(672.52765,120.72071)
+:Sending Touch (ACTION_DOWN): 0:(397.0,2039.0)
+:Sending Touch (ACTION_UP): 0:(453.95016,2038.2404)
+:Sending Touch (ACTION_DOWN): 0:(12.0,1375.0)
+:Sending Touch (ACTION_UP): 0:(7.151629,1370.3009)
+:Sending Touch (ACTION_DOWN): 0:(247.0,1669.0)
+:Sending Touch (ACTION_UP): 0:(238.15518,1664.846)
+:Sending Touch (ACTION_DOWN): 0:(786.0,2098.0)
+:Sending Touch (ACTION_UP): 0:(780.97766,2097.2854)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.sec.android.app.launcher/.activities.LauncherActivity } in package com.sec.android.app.launcher
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(863.0,782.0)
+:Sending Touch (ACTION_UP): 0:(853.32794,784.5709)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(681.0,1352.0)
+:Sending Touch (ACTION_UP): 0:(678.0109,1360.1794)
+:Sending Touch (ACTION_DOWN): 0:(134.0,1852.0)
+:Sending Touch (ACTION_UP): 0:(138.69435,1861.1794)
+:Sending Touch (ACTION_DOWN): 0:(1000.0,1488.0)
+:Sending Touch (ACTION_UP): 0:(982.3066,1503.6465)
+:Sending Touch (ACTION_DOWN): 0:(386.0,2093.0)
+:Sending Touch (ACTION_UP): 0:(390.76093,2093.6992)
+:Sending Touch (ACTION_DOWN): 0:(188.0,2017.0)
+:Sending Touch (ACTION_UP): 0:(185.46194,2013.8718)
+:Sending Touch (ACTION_DOWN): 0:(584.0,1599.0)
+:Sending Touch (ACTION_UP): 0:(572.2673,1599.8604)
+:Sending Touch (ACTION_DOWN): 0:(820.0,2053.0)
+    //[calendar_time:2019-03-24 20:12:14.894  system_uptime:3270295907]
+    // Sending event #300
+:Sending Touch (ACTION_UP): 0:(997.1443,2029.9221)
+:Sending Touch (ACTION_DOWN): 0:(1062.0,760.0)
+:Sending Touch (ACTION_UP): 0:(1061.1753,746.74493)
+:Sending Touch (ACTION_DOWN): 0:(307.0,296.0)
+:Sending Touch (ACTION_UP): 0:(293.2811,294.83572)
+    // Rejecting start of Intent { act=com.samsung.android.weather.intent.action.internal.PARTICULARS cmp=com.sec.android.daemonapp/com.samsung.android.weather.app.particulars.ParticularsActivity } in package com.sec.android.daemonapp
+:Sending Touch (ACTION_DOWN): 0:(286.0,1678.0)
+:Sending Touch (ACTION_UP): 0:(288.88626,1676.6907)
+    // Rejecting start of Intent { act=com.sec.android.app.music.intent.action.LAUNCH_MUSIC pkg=com.sec.android.app.music cmp=com.sec.android.app.music/com.samsung.android.app.music.common.ActivityLauncher } in package com.sec.android.app.music
+:Sending Touch (ACTION_DOWN): 0:(219.0,1528.0)
+:Sending Touch (ACTION_UP): 0:(206.53204,1535.4307)
+    // Rejecting start of Intent { act=com.sec.android.app.music.intent.action.LAUNCH_MUSIC pkg=com.sec.android.app.music cmp=com.sec.android.app.music/com.samsung.android.app.music.common.ActivityLauncher } in package com.sec.android.app.music
+:Sending Touch (ACTION_DOWN): 0:(606.0,1982.0)
+:Sending Touch (ACTION_UP): 0:(604.3623,1998.1481)
+    // Rejecting start of Intent { cmp=com.joaomgcd.autovoice/.activity.ActivityRecognizeNLP } in package com.joaomgcd.autovoice
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(951.0,548.0)
+:Sending Touch (ACTION_UP): 0:(950.98193,536.7625)
+:Sending Touch (ACTION_DOWN): 0:(784.0,2048.0)
+:Sending Touch (ACTION_UP): 0:(776.947,2047.5181)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.brave.browser/com.google.android.apps.chrome.Main } in package com.brave.browser
+:Sending Touch (ACTION_DOWN): 0:(648.0,1615.0)
+:Sending Touch (ACTION_UP): 0:(656.14764,1626.6156)
+:Sending Touch (ACTION_DOWN): 0:(300.0,306.0)
+:Sending Touch (ACTION_UP): 0:(303.4993,324.23395)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.brave.browser/com.google.android.apps.chrome.Main } in package com.brave.browser
+:Sending Touch (ACTION_DOWN): 0:(211.0,416.0)
+:Sending Touch (ACTION_UP): 0:(205.8764,412.8383)
+:Sending Touch (ACTION_DOWN): 0:(39.0,2193.0)
+:Sending Touch (ACTION_UP): 0:(27.662617,2195.4138)
+:Sending Touch (ACTION_DOWN): 0:(978.0,1465.0)
+:Sending Touch (ACTION_UP): 0:(981.26746,1471.0538)
+:Sending Touch (ACTION_DOWN): 0:(244.0,373.0)
+:Sending Touch (ACTION_UP): 0:(249.60287,373.2219)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+    // Rejecting start of Intent { act=com.android.intent.action.SHOW_BRIGHTNESS_DIALOG cmp=com.android.systemui/.settings.BrightnessDialog } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(780.0,657.0)
+:Sending Touch (ACTION_UP): 0:(784.3273,659.35474)
+    // Rejecting start of Intent { cmp=com.google.android.googlequicksearchbox/com.google.android.apps.gsa.staticplugins.opa.OpaActivity } in package com.google.android.googlequicksearchbox
+:Sending Touch (ACTION_DOWN): 0:(167.0,1471.0)
+:Sending Touch (ACTION_UP): 0:(166.38878,1468.3873)
+:Sending Touch (ACTION_DOWN): 0:(640.0,175.0)
+:Sending Touch (ACTION_UP): 0:(623.18506,186.08243)
+:Sending Touch (ACTION_DOWN): 0:(194.0,744.0)
+:Sending Touch (ACTION_UP): 0:(210.78107,725.9993)
+:Sending Touch (ACTION_DOWN): 0:(267.0,232.0)
+:Sending Touch (ACTION_UP): 0:(261.57394,223.8776)
+:Sending Touch (ACTION_DOWN): 0:(523.0,1264.0)
+:Sending Touch (ACTION_UP): 0:(519.7922,1280.9934)
+:Sending Touch (ACTION_DOWN): 0:(705.0,84.0)
+:Sending Touch (ACTION_UP): 0:(700.0689,78.29784)
+:Sending Touch (ACTION_DOWN): 0:(640.0,1308.0)
+:Sending Touch (ACTION_UP): 0:(640.5047,1312.1774)
+:Sending Touch (ACTION_DOWN): 0:(64.0,1277.0)
+    //[calendar_time:2019-03-24 20:12:17.050  system_uptime:3270298062]
+    // Sending event #400
+:Sending Touch (ACTION_UP): 0:(1.094976,1352.7255)
+:Sending Touch (ACTION_DOWN): 0:(85.0,2116.0)
+:Sending Touch (ACTION_UP): 0:(129.07489,2151.374)
+:Sending rotation degree=3, persist=false
+:Sending Touch (ACTION_DOWN): 0:(31.0,938.0)
+:Sending Touch (ACTION_UP): 0:(45.2066,941.8318)
+:Sending Touch (ACTION_DOWN): 0:(2087.0,878.0)
+:Sending Touch (ACTION_UP): 0:(2097.9958,875.8437)
+:Sending Touch (ACTION_DOWN): 0:(679.0,819.0)
+:Sending Touch (ACTION_UP): 0:(694.1228,806.80444)
+:Sending Touch (ACTION_DOWN): 0:(2188.0,677.0)
+:Sending Touch (ACTION_UP): 0:(2189.744,678.579)
+:Sending Touch (ACTION_DOWN): 0:(1662.0,839.0)
+:Sending Touch (ACTION_UP): 0:(1678.6199,837.9586)
+:Sending Touch (ACTION_DOWN): 0:(1672.0,149.0)
+:Sending Touch (ACTION_UP): 0:(1674.4844,159.18738)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending rotation degree=3, persist=false
+:Sending Touch (ACTION_DOWN): 0:(610.0,267.0)
+:Sending Touch (ACTION_UP): 0:(601.4824,268.1809)
+:Sending Touch (ACTION_DOWN): 0:(345.0,54.0)
+:Sending Touch (ACTION_UP): 0:(390.19174,121.12218)
+:Sending Touch (ACTION_DOWN): 0:(487.0,84.0)
+:Sending Touch (ACTION_UP): 0:(487.15128,83.552155)
+:Sending Touch (ACTION_DOWN): 0:(642.0,604.0)
+:Sending Touch (ACTION_UP): 0:(645.8183,600.66046)
+:Sending rotation degree=1, persist=false
+:Sending Touch (ACTION_DOWN): 0:(1490.0,100.0)
+:Sending Touch (ACTION_UP): 0:(1490.5552,98.69564)
+:Sending Touch (ACTION_DOWN): 0:(11.0,792.0)
+:Sending Touch (ACTION_UP): 0:(19.351576,795.17053)
+:Sending Touch (ACTION_DOWN): 0:(1235.0,224.0)
+:Sending Touch (ACTION_UP): 0:(1242.5051,221.503)
+:Sending Touch (ACTION_DOWN): 0:(39.0,252.0)
+:Sending Touch (ACTION_UP): 0:(93.88828,262.5869)
+:Sending Touch (ACTION_DOWN): 0:(767.0,289.0)
+:Sending Touch (ACTION_UP): 0:(765.0576,292.88254)
+:Sending Touch (ACTION_DOWN): 0:(768.0,1046.0)
+:Sending Touch (ACTION_UP): 0:(750.7229,1047.3083)
+:Sending Touch (ACTION_DOWN): 0:(863.0,938.0)
+:Sending Touch (ACTION_UP): 0:(856.5946,941.4628)
+:Sending Touch (ACTION_DOWN): 0:(1995.0,1041.0)
+:Sending Touch (ACTION_UP): 0:(2047.2866,1007.9598)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(638.0,75.0)
+:Sending Touch (ACTION_UP): 0:(636.0721,91.62302)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(164.0,318.0)
+:Sending Touch (ACTION_UP): 0:(154.17047,324.15955)
+:Sending Touch (ACTION_DOWN): 0:(302.0,625.0)
+:Sending Touch (ACTION_UP): 0:(302.47855,629.1645)
+:Sending Touch (ACTION_DOWN): 0:(1481.0,167.0)
+:Sending Touch (ACTION_UP): 0:(1436.4169,133.57623)
+:Sending Touch (ACTION_DOWN): 0:(428.0,88.0)
+    //[calendar_time:2019-03-24 20:12:19.528  system_uptime:3270300541]
+    // Sending event #500
+:Sending Touch (ACTION_UP): 0:(434.23535,88.20881)
+:Sending Touch (ACTION_DOWN): 0:(2035.0,927.0)
+:Sending Touch (ACTION_UP): 0:(2031.1497,926.7323)
+:Sending Touch (ACTION_DOWN): 0:(523.0,854.0)
+:Sending Touch (ACTION_UP): 0:(522.544,834.5127)
+:Sending Touch (ACTION_DOWN): 0:(1059.0,881.0)
+:Sending Touch (ACTION_UP): 0:(1057.4592,872.83563)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(1272.0,317.0)
+:Sending Touch (ACTION_UP): 0:(1256.8041,320.56796)
+:Sending Touch (ACTION_DOWN): 0:(1585.0,456.0)
+:Sending Touch (ACTION_UP): 0:(1582.6193,454.42664)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(2096.0,206.0)
+:Sending Touch (ACTION_UP): 0:(2092.8643,211.05664)
+:Sending Touch (ACTION_DOWN): 0:(1119.0,466.0)
+:Sending Touch (ACTION_UP): 0:(1113.3462,452.19467)
+:Sending Touch (ACTION_DOWN): 0:(162.0,576.0)
+:Sending Touch (ACTION_UP): 0:(159.50758,569.84406)
+:Sending rotation degree=1, persist=true
+:Sending Touch (ACTION_DOWN): 0:(1649.0,163.0)
+:Sending Touch (ACTION_UP): 0:(1655.5731,148.52112)
+:Sending Touch (ACTION_DOWN): 0:(434.0,526.0)
+:Sending Touch (ACTION_UP): 0:(436.85315,539.6991)
+:Sending Touch (ACTION_DOWN): 0:(97.0,921.0)
+:Sending Touch (ACTION_UP): 0:(116.17022,908.6276)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(1147.0,366.0)
+:Sending Touch (ACTION_UP): 0:(1148.9799,366.91248)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=content://media/external/images/media/5253 typ=image/jpeg cmp=android/com.android.internal.app.ResolverActivity } in package android
+:Sending Touch (ACTION_DOWN): 0:(783.0,547.0)
+:Sending Touch (ACTION_UP): 0:(778.55176,546.7667)
+:Sending Touch (ACTION_DOWN): 0:(760.0,187.0)
+:Sending Touch (ACTION_UP): 0:(758.94867,186.24643)
+:Sending Touch (ACTION_DOWN): 0:(144.0,172.0)
+:Sending Touch (ACTION_UP): 0:(161.6422,172.60225)
+:Sending Touch (ACTION_DOWN): 0:(1238.0,475.0)
+:Sending Touch (ACTION_UP): 0:(1235.1602,560.12305)
+:Sending Touch (ACTION_DOWN): 0:(1085.0,534.0)
+:Sending Touch (ACTION_UP): 0:(1091.9303,528.54254)
+:Sending Touch (ACTION_DOWN): 0:(2150.0,862.0)
+:Sending Touch (ACTION_UP): 0:(2143.5708,855.42456)
+:Sending Touch (ACTION_DOWN): 0:(1329.0,315.0)
+:Sending Touch (ACTION_UP): 0:(1344.2944,307.68115)
+:Sending Touch (ACTION_DOWN): 0:(179.0,939.0)
+:Sending Touch (ACTION_UP): 0:(178.8571,943.0117)
+:Sending Touch (ACTION_DOWN): 0:(719.0,363.0)
+:Sending Touch (ACTION_UP): 0:(735.04205,384.11136)
+:Sending Touch (ACTION_DOWN): 0:(1015.0,431.0)
+:Sending Touch (ACTION_UP): 0:(1030.9872,421.94852)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(1416.0,698.0)
+:Sending Touch (ACTION_UP): 0:(1428.3577,688.0021)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(1161.0,372.0)
+:Sending Touch (ACTION_UP): 0:(1158.1553,372.63992)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+    //[calendar_time:2019-03-24 20:12:21.542  system_uptime:3270302555]
+    // Sending event #600
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1707.0,290.0)
+:Sending Touch (ACTION_UP): 0:(1707.2892,274.99615)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.sec.android.app.launcher/.activities.LauncherActivity } in package com.sec.android.app.launcher
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(930.0,2079.0)
+:Sending Touch (ACTION_UP): 0:(933.1019,2079.1228)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.sec.android.app.camera/.Camera } in package com.sec.android.app.camera
+:Sending Touch (ACTION_DOWN): 0:(173.0,834.0)
+:Sending Touch (ACTION_UP): 0:(162.11559,831.2624)
+:Sending Touch (ACTION_DOWN): 0:(1026.0,630.0)
+:Sending Touch (ACTION_UP): 0:(1027.5419,627.34216)
+:Sending Touch (ACTION_DOWN): 0:(132.0,679.0)
+:Sending Touch (ACTION_UP): 0:(133.87085,675.3769)
+:Sending Touch (ACTION_DOWN): 0:(412.0,1941.0)
+:Sending Touch (ACTION_UP): 0:(409.949,1938.9454)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.samsung.android.messaging/com.android.mms.ui.ConversationComposer } in package com.samsung.android.messaging
+:Sending Touch (ACTION_DOWN): 0:(816.0,1124.0)
+:Sending Touch (ACTION_UP): 0:(825.4192,1113.8895)
+:Sending Touch (ACTION_DOWN): 0:(190.0,1862.0)
+:Sending Touch (ACTION_UP): 0:(210.92276,1846.7242)
+:Sending Touch (ACTION_DOWN): 0:(389.0,1912.0)
+:Sending Touch (ACTION_UP): 0:(395.0884,1908.1442)
+:Sending Touch (ACTION_DOWN): 0:(123.0,599.0)
+:Sending Touch (ACTION_UP): 0:(113.19801,599.44116)
+:Sending Touch (ACTION_DOWN): 0:(20.0,1606.0)
+:Sending Touch (ACTION_UP): 0:(81.22412,1495.1401)
+:Sending Touch (ACTION_DOWN): 0:(609.0,191.0)
+:Sending Touch (ACTION_UP): 0:(610.4518,200.72107)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.sec.android.app.clockpackage/.ClockPackage } in package com.sec.android.app.clockpackage
+:Sending Touch (ACTION_DOWN): 0:(884.0,1198.0)
+:Sending Touch (ACTION_UP): 0:(884.16815,1212.9874)
+:Sending Touch (ACTION_DOWN): 0:(92.0,70.0)
+:Sending Touch (ACTION_UP): 0:(107.15966,69.39173)
+:Sending Touch (ACTION_DOWN): 0:(1004.0,513.0)
+:Sending Touch (ACTION_UP): 0:(1004.6495,509.45523)
+    // Rejecting start of Intent { act=android.search.action.GLOBAL_SEARCH cmp=com.google.android.googlequicksearchbox/.SearchActivity } in package com.google.android.googlequicksearchbox
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.sec.android.app.launcher/.activities.LauncherActivity } in package com.sec.android.app.launcher
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(250.0,728.0)
+:Sending Touch (ACTION_UP): 0:(272.3483,726.3736)
+:Sending Touch (ACTION_DOWN): 0:(152.0,1735.0)
+:Sending Touch (ACTION_UP): 0:(153.206,1740.7773)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(298.0,1461.0)
+:Sending Touch (ACTION_UP): 0:(294.65375,1455.8373)
+:Sending Touch (ACTION_DOWN): 0:(619.0,972.0)
+:Sending Touch (ACTION_UP): 0:(633.4275,986.6518)
+    //[calendar_time:2019-03-24 20:12:24.486  system_uptime:3270305499]
+    // Sending event #700
+    //[calendar_time:2019-03-24 20:12:24.537  system_uptime:3270305550]
+    // Sending event #700
+:Sending Touch (ACTION_DOWN): 0:(722.0,294.0)
+:Sending Touch (ACTION_UP): 0:(729.9867,299.6096)
+:Sending Touch (ACTION_DOWN): 0:(459.0,1034.0)
+:Sending Touch (ACTION_UP): 0:(458.3876,1033.5414)
+:Sending Touch (ACTION_DOWN): 0:(444.0,1547.0)
+:Sending Touch (ACTION_UP): 0:(444.04517,1550.7401)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(441.0,1285.0)
+:Sending Touch (ACTION_UP): 0:(452.2602,1285.5062)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(965.0,1577.0)
+:Sending Touch (ACTION_UP): 0:(958.52515,1578.1412)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(1059.0,1336.0)
+:Sending Touch (ACTION_UP): 0:(1061.5217,1332.9935)
+:Sending Touch (ACTION_DOWN): 0:(628.0,1086.0)
+:Sending Touch (ACTION_UP): 0:(628.72845,1082.5376)
+:Sending Touch (ACTION_DOWN): 0:(436.0,1136.0)
+:Sending Touch (ACTION_UP): 0:(449.53882,1138.6724)
+:Sending Touch (ACTION_DOWN): 0:(585.0,1784.0)
+:Sending Touch (ACTION_UP): 0:(608.32715,1770.1366)
+:Sending Touch (ACTION_DOWN): 0:(239.0,173.0)
+:Sending Touch (ACTION_UP): 0:(232.77629,174.732)
+:Sending Touch (ACTION_DOWN): 0:(941.0,1626.0)
+:Sending Touch (ACTION_UP): 0:(940.7094,1612.7026)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1044.0,1418.0)
+:Sending Touch (ACTION_UP): 0:(1042.5167,1421.786)
+:Sending Touch (ACTION_DOWN): 0:(273.0,310.0)
+:Sending Touch (ACTION_UP): 0:(265.0656,313.02963)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(668.0,426.0)
+:Sending Touch (ACTION_UP): 0:(668.1291,427.38638)
+:Sending rotation degree=3, persist=true
+:Sending Touch (ACTION_DOWN): 0:(1810.0,810.0)
+:Sending Touch (ACTION_UP): 0:(1822.0148,811.5981)
+:Sending rotation degree=0, persist=true
+:Sending Touch (ACTION_DOWN): 0:(2192.0,766.0)
+:Sending Touch (ACTION_UP): 0:(2207.5288,767.71783)
+:Sending Touch (ACTION_DOWN): 0:(1988.0,594.0)
+:Sending Touch (ACTION_UP): 0:(2077.1423,680.6636)
+:Sending Touch (ACTION_DOWN): 0:(491.0,250.0)
+:Sending Touch (ACTION_UP): 0:(483.33582,249.9858)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+    //[calendar_time:2019-03-24 20:12:27.052  system_uptime:3270308065]
+    // Sending event #800
+:Sending Touch (ACTION_DOWN): 0:(617.0,281.0)
+:Sending Touch (ACTION_UP): 0:(584.9746,344.8)
+:Sending Touch (ACTION_DOWN): 0:(669.0,502.0)
+:Sending Touch (ACTION_UP): 0:(661.9928,497.2154)
+:Sending Touch (ACTION_DOWN): 0:(686.0,696.0)
+:Sending Touch (ACTION_UP): 0:(692.1642,689.3209)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(561.0,828.0)
+:Sending Touch (ACTION_UP): 0:(583.6342,858.2096)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(80.0,879.0)
+:Sending Touch (ACTION_UP): 0:(73.27946,877.06537)
+:Sending Touch (ACTION_DOWN): 0:(677.0,829.0)
+:Sending Touch (ACTION_UP): 0:(672.12897,820.74744)
+:Sending Touch (ACTION_DOWN): 0:(623.0,2175.0)
+:Sending Touch (ACTION_UP): 0:(588.72986,2220.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(94.0,1523.0)
+:Sending Touch (ACTION_UP): 0:(96.72905,1515.7352)
+:Sending Touch (ACTION_DOWN): 0:(211.0,277.0)
+:Sending Touch (ACTION_UP): 0:(205.29675,273.75613)
+:Sending Touch (ACTION_DOWN): 0:(154.0,1356.0)
+:Sending Touch (ACTION_UP): 0:(160.85146,1361.683)
+:Sending Touch (ACTION_DOWN): 0:(679.0,872.0)
+:Sending Touch (ACTION_UP): 0:(676.7895,870.9953)
+:Sending Touch (ACTION_DOWN): 0:(852.0,547.0)
+:Sending Touch (ACTION_UP): 0:(849.5316,547.34283)
+:Sending Touch (ACTION_DOWN): 0:(274.0,1539.0)
+:Sending Touch (ACTION_UP): 0:(276.85983,1538.9292)
+:Sending Touch (ACTION_DOWN): 0:(629.0,920.0)
+:Sending Touch (ACTION_UP): 0:(631.95825,914.2723)
+:Sending Touch (ACTION_DOWN): 0:(46.0,1989.0)
+:Sending Touch (ACTION_UP): 0:(56.508625,1999.623)
+:Sending Touch (ACTION_DOWN): 0:(367.0,646.0)
+:Sending Touch (ACTION_UP): 0:(384.1014,643.8203)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(382.0,207.0)
+:Sending Touch (ACTION_UP): 0:(395.63516,208.61226)
+:Sending Touch (ACTION_DOWN): 0:(322.0,133.0)
+:Sending Touch (ACTION_UP): 0:(315.4973,134.89922)
+:Sending Touch (ACTION_DOWN): 0:(580.0,1647.0)
+:Sending Touch (ACTION_UP): 0:(568.3641,1609.1934)
+:Sending Touch (ACTION_DOWN): 0:(1018.0,2009.0)
+:Sending Touch (ACTION_UP): 0:(1015.8656,2008.4149)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(366.0,98.0)
+:Sending Touch (ACTION_UP): 0:(378.20087,100.81142)
+    //[calendar_time:2019-03-24 20:12:28.894  system_uptime:3270309907]
+    // Sending event #900
+    //[calendar_time:2019-03-24 20:12:28.946  system_uptime:3270309959]
+    // Sending event #900
+:Sending Touch (ACTION_DOWN): 0:(18.0,1766.0)
+:Sending Touch (ACTION_UP): 0:(0.0,1768.9557)
+:Sending Touch (ACTION_DOWN): 0:(198.0,148.0)
+:Sending Touch (ACTION_UP): 0:(197.99452,139.94135)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(319.0,1832.0)
+:Sending Touch (ACTION_UP): 0:(317.42386,1838.3276)
+:Sending Touch (ACTION_DOWN): 0:(915.0,2165.0)
+:Sending Touch (ACTION_UP): 0:(912.5824,2165.7925)
+:Sending Touch (ACTION_DOWN): 0:(887.0,645.0)
+:Sending Touch (ACTION_UP): 0:(887.6832,653.0965)
+:Sending Touch (ACTION_DOWN): 0:(169.0,522.0)
+:Sending Touch (ACTION_UP): 0:(170.35904,535.80927)
+:Sending Touch (ACTION_DOWN): 0:(960.0,432.0)
+:Sending Touch (ACTION_UP): 0:(952.9376,437.7013)
+:Sending Touch (ACTION_DOWN): 0:(583.0,2108.0)
+:Sending Touch (ACTION_UP): 0:(581.2795,2112.1072)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(863.0,900.0)
+:Sending Touch (ACTION_UP): 0:(878.89764,847.5566)
+:Sending Touch (ACTION_DOWN): 0:(1003.0,1634.0)
+:Sending Touch (ACTION_UP): 0:(997.8367,1628.7267)
+:Sending Touch (ACTION_DOWN): 0:(1006.0,1452.0)
+:Sending Touch (ACTION_UP): 0:(1007.8658,1443.8835)
+:Sending Touch (ACTION_DOWN): 0:(11.0,1390.0)
+:Sending Touch (ACTION_UP): 0:(25.294487,1379.6299)
+:Sending rotation degree=2, persist=false
+:Sending Touch (ACTION_DOWN): 0:(777.0,415.0)
+:Sending Touch (ACTION_UP): 0:(771.7948,410.38968)
+:Sending Touch (ACTION_DOWN): 0:(995.0,1916.0)
+:Sending Touch (ACTION_UP): 0:(998.3528,1927.1954)
+:Sending Touch (ACTION_DOWN): 0:(926.0,403.0)
+:Sending Touch (ACTION_UP): 0:(944.26575,387.97394)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(626.0,2162.0)
+:Sending Touch (ACTION_UP): 0:(625.48645,2163.695)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=ml.varpeti.hf06/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ml.varpeti.hf06/.MainActivity } in package ml.varpeti.hf06
+:Sending Touch (ACTION_DOWN): 0:(762.0,2092.0)
+:Sending Touch (ACTION_UP): 0:(764.9878,2099.9043)
+:Sending rotation degree=0, persist=true
+:Sending Touch (ACTION_DOWN): 0:(937.0,121.0)
+:Sending Touch (ACTION_UP): 0:(938.6924,129.49174)
+:Sending Touch (ACTION_DOWN): 0:(945.0,1522.0)
+:Sending Touch (ACTION_UP): 0:(951.412,1523.7692)
+:Sending Touch (ACTION_DOWN): 0:(265.0,1910.0)
+:Sending Touch (ACTION_UP): 0:(272.33997,1909.489)
+:Sending Touch (ACTION_DOWN): 0:(1040.0,1879.0)
+Events injected: 999
+:Sending rotation degree=0, persist=false
+:Dropped: keys=1 pointers=0 trackballs=0 flips=15 rotations=0
+## Network stats: elapsed time=22842ms (0ms mobile, 0ms wifi, 22842ms not connected)
+// Monkey finished

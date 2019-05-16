@@ -1,0 +1,32 @@
+Hacking has many different deffinitions and meanings, so many in fact i can't even think another word with this issue.
+And I wont fighting against these definitions, because I will allways lose against the evoulution of languages.
+For example hacking in the public eye is negative,
+or people are participating in any kind of programing events call themselves hackers,
+or social engineering is also called hacking,
+also the CrazyRussianHacker is a "life hacker".
+
+So here my definition:
+
+Hacking is understanding a system so well that we can make them do stuff that was not intended.
+
+Okey, enough for the borring definitions, lets see some usefull c++ code hacking.
+
+The task is simple: swap two intgers.
+
+The first one is the common way to do it. Slow, eats lots of memory.
+The second one is a bit tricky, but easy to understand why works. It uses less memory but only works with numbers.
+The third one is called xor swap algorithm. We have to understand memory, and bitwise operations to understand it.
+
+Itresting right? No.
+
+Geek hackers love to challange each other so lets see a geeks4geeks "game".
+
+It just a code. If u are familiar with PHP, u notice the "exec" command, but also the strong protection before. Even for a professional PHP dev it seems legit, without any "deadly bug". But there is one. We just have to understand deeply every single command in this small code, and hopefully we find the invsible bug.
+
+Okey thats boring. Lets see a live game hack!!! (if i have enough time)
+
+Firts of all I lauch the game, its a single player randomly generated action RPG shooter with heavy roguelike elements. I choose this game, becos simple to show the technic I going to use.
+Then I find its PID.
+Next I use a program called scanmem, its similar to the Window's CheatEngine. Whit that i can find numbers in another programs memory.
+...
+

@@ -1,0 +1,118 @@
+
+SQLcl: Release 17.4.0 Production on Cs szept. 13 19:42:19 2018
+
+Copyright (c) 1982, 2018, Oracle.  All rights reserved.
+
+Password? (**********?) *************
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+
+
+NAME
+--------------------------------------------------------------------------------
+COUNT(S.ID)     SUMDUR     AVGDUR
+----------- ---------- ----------
+PPKE ITK                                                                        
+         24       7933        345
+
+Spirit - Demo                                                                   
+         13        532         41
+
+teknős5                                                                         
+          0                      
+
+teknős6                                                                         
+          0                      
+
+teszt x                                                                         
+          0                      
+
+teknős7                                                                         
+          0                      
+
+[DEL] 3                                                                         
+
+NAME
+--------------------------------------------------------------------------------
+COUNT(S.ID)     SUMDUR     AVGDUR
+----------- ---------- ----------
+          0                      
+
+teszt                                                                           
+        429     164076        443
+
+ía                                                                              
+          0                      
+
+6                                                                               
+          0                      
+
+PPKE ITK Énekkar                                                                
+          1        130        130
+
+Akik szeretik a kávét                                                           
+          0                      
+
+Tesztelő közösség                                                               
+          0                      
+
+NAME
+--------------------------------------------------------------------------------
+COUNT(S.ID)     SUMDUR     AVGDUR
+----------- ---------- ----------
+
+77                                                                              
+          0                      
+
+Boardport                                                                       
+          0                      
+
+teknős2                                                                         
+          0                      
+
+portál teszt                                                                    
+          1        170        170
+
+[DEL] 4                                                                         
+          2        401        201
+
+5                                                                               
+          0                      
+
+
+NAME
+--------------------------------------------------------------------------------
+COUNT(S.ID)     SUMDUR     AVGDUR
+----------- ---------- ----------
+teknős                                                                          
+          0                      
+
+teknős4                                                                         
+          0                      
+
+Pasaréti Plébánia                                                               
+          0                      
+
+Emmánuel                                                                        
+         56      35442        644
+
+teknős3                                                                         
+          0                      
+
+[DEL] teknős8                                                                   
+          0                      
+
+teszt 2                                                                         
+
+NAME
+--------------------------------------------------------------------------------
+COUNT(S.ID)     SUMDUR     AVGDUR
+----------- ---------- ----------
+          0                      
+
+
+26 rows selected. 
+
+SQL> 
+Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
